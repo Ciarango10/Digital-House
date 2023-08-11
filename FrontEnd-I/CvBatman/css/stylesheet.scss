@@ -1,0 +1,58 @@
+$colorTitulos: rgba(0, 86, 119, 1);
+$fondoTitulos: #C4C4C4;
+$fondoImagen:#E6E6E6;
+$letra:'Times New Roman', Times, serif;
+$fondoFooter:#005677;
+$blanco: white;
+
+.titulos{
+    background-color: $fondoTitulos;
+    color: $colorTitulos;
+    line-height: 16.94px;
+    letter-spacing: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: $letra;
+}
+h1{
+    text-align: center;
+    font-size: 35px;
+    line-height: 30px;
+}
+.lista{
+    li{
+        list-style-type: none;
+    }
+} 
+pre{
+    margin:0px;
+    font-family: $letra;
+}
+#contenedorImagen{
+    background-color: $fondoImagen;
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+img {
+    display: inline-block;
+    margin: 8px;
+    margin-left: 11px;
+}
+footer{
+    background-color:$fondoFooter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    span{
+        color: $blanco;
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/*Header*/
+#header1{
+    background-color: #1CD1B0 ;
+}
+
+#header2{
+    display: flex;
+    align-items: center;
+    background-color: #00669F;
+    color: white;
+    padding: 5px;
+}
+
+#header2 h2{
+    margin-left: 20px;
+}
+
+#header3{
+    background-color: #001D2D;
+    color: white;
+}
+
+#nav-bar-items{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#nav-bar-item{
+    display: flex;
+    list-style: none;
+}
+
+#nav-bar-item li{
+    margin:5px 10px;
+}
+
+/*main*/
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+#mainContainer{
+    background-color: #00669F;
+    color: white;
+    margin-top: 30px;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 49.0901px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 720px;
+}
+
+#formContainer form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input, select{
+    border: 1.53px solid #0000001A;
+    border-radius: 10px;
+    Width:250px;
+    Height:40px;
+    margin-top: 10px;
+}
+
+#file {
+    width:250px;
+    height: 20px;
+    border-radius: 0px;
+    color: black;
+    border: 0px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    justify-content: center;
+    text-align: left;
+    margin:10px 5px;
+}
+
+textarea{
+    height: 300px;
+    Width:250px;
+    border-radius: 15.340659141540527px;
+    padding: 10px;
+    border: 0px;
+    margin-right: 25px;
+}
+
+#questionsContainer{
+    Width:250px;
+    height: 300px;
+}
+
+.checkbox, .radio{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width:170px;
+    height: 10px;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.checkbox input, .radio input{
+    width: 25px;
+    height: 15px;
+    margin:0px 5px 0px 0px;
+    border: none;
+}
+
+hr{
+    color: #CCCCCC;
+    width: 250px;
+    border: 1px solid #CCCCCC;
+}
+
+.button{
+    width: 40%;
+    background-color: #1CD1B0;
+    height: 87px;
+    border-radius: 23.011px;
+    border: 0px;
+    font-size: 27px;
+    font-weight: bold;
+    margin-top:40px;
+}
+
+.button:hover{
+    background-color: #001D2D;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    color: white;
+    background-color: #00669F;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+

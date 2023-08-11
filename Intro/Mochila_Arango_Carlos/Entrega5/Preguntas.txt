@@ -1,0 +1,14 @@
+1. Algunas de las razones por las que no se puede utilizar un lenguaje de programacion en algunos
+sistemas operativos es por:
+-Implementacion
+-Dependencias y Bibliotecas
+- Caracteristicas del sistema operativo
+-Historia y Legado
+
+2.VirtualBox se identifica como una maquina virtual tipo 2, esto significa que se instala y se 
+ejecuta como una aplicacion en un sistema operativo host existente como Windows, macOS o Linux.
+
+3.Si se rompe una maquina virtual generalmente no afectara a las demas, esto se debe a que cada 
+maquina virtual se ejecuta de forma aislada, como si fuera un sistema operativo independiente de su propia instancia virtual
+
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <div id="header1">
+            <p>20% de descuento en todos los productos!</p>
+        </div>
+        <div id="header2">
+            <img src="images/Logo (1).svg" alt="logo">
+            <h2>Nombre Tienda</h2>
+        </div>
+        <div id="header3">
+            <nav id="nav-bar-items">
+                <ul id="nav-bar-item">
+                    <li><a>Contacto</a></li>
+                    <li><a>Registrarme</a></li>
+                    <li><a>Ingresar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="mainContainer">
+            <h1>Añadí tu super!</h1>
+            <p>Agregá a tu personaje favorito completando las opciones</p>
+            <div id="formContainer">
+                <form action="" method="">
+                    <label for="nombre">
+                        *Nombre
+                        <input type="text" id="nombre" name="nombre" required>
+                    </label>
+                    <label for="especie">
+                        *Especie
+                        <select name="Unknown" required>
+                            <option value="0">Especie</option>
+                            <option value="1">Unknown</option>
+                            <option value="2">Unknown2</option>
+                            <option value="3">Unknown3</option>
+                            <option value="4">Unknown4</option>                  
+                        </select>
+                    </label>
+                    <label for="fecha">
+                        Fecha
+                        <input type="date" id="fecha" name="fecha">
+                    </label>
+                    <label>Agregar Foto
+                        <input type="file" name="avatar" id="file">
+                    </label>
+                    <label for="descripcion">
+                        <textarea id="descripcion" name="descripcion" placeholder="Descripcion"></textarea>
+                    </label>
+                    <div id="questionsContainer">
+                        <label>
+                            Poderes
+                            <label for="volar" class="checkbox">
+                                <input type="checkbox" id="volar" name="poder">
+                                Volar
+                            </label>
+                            <label for="superInteligencia" class="checkbox">
+                                <input type="checkbox" id="superInteligencia" name="poder">
+                                SuperInteligencia
+                            </label>
+                            <label for="rayoLaser" class="checkbox">
+                                <input type="checkbox" id="rayoLaser" name="poder">
+                                Vista de rayo laser
+                            </label>
+                            <label for="dinero" class="checkbox">
+                                <input type="checkbox" id="dinero" name="poder">
+                                Billetera gorda
+                            </label>
+                        </label>
+                        <hr>
+                        <label>
+                            Tipo de personaje
+                            <label for="heroe" class="radio">
+                                <input type="radio" name="rol" id="heroe" value="heroe">
+                                Héroe / Heroina
+                            </label>
+                            <label for="villano" class="radio">
+                                <input type="radio" name="rol" id="villano" value="villano">
+                                Villano / Villana
+                            </label>
+                        </label>
+                    </div>
+                    <button type="button" class="button">Añadir</button>
+                </form>
+            </div>            
+        </div>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>

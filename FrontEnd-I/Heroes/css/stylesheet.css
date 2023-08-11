@@ -1,0 +1,75 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin:0px
+}
+
+.contenedorPadre{
+    position: absolute;
+    left: 32px;
+    top: 220px;
+}
+
+.contenedorImagenes{
+    position: relative;
+}
+
+.card{
+    display: inline-block;
+    width:300px;
+    margin-left: 100px;
+}
+
+.corazon{
+    position: absolute;
+    left:15px;
+    top:15px;
+    width:30px;
+}
+
+.contenido{
+    background-color: #F3F3F3;
+    position: relative;
+    top:-10px;
+}
+
+    .contenido img{
+        border-radius: 60px;
+        position: relative;
+        left: 90px;
+        top:-90px
+    }
+
+    .contenido h2{
+        position: relative;
+        top:-90px;
+        text-align: center;
+    }
+
+    .contenido p{
+        position: relative;
+        top:-80px;
+        text-align: left;
+        padding: 0px 30px;       
+    }
+
+    .contenido button{
+        position: relative;
+        top:-30px;
+        background: #00669F;
+        width:128px;
+        height:50px;
+        color: white; 
+        left:90px;
+        border:none;
+    }
+
+footer{
+    background-color: #00669F;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height:51px;
+    padding: 20px;
+}

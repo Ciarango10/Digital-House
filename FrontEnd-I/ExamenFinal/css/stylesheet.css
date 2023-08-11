@@ -1,0 +1,473 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+}
+body{
+    background-color:#FAFAFA;
+}
+@keyframes boton {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+/*Mobile*/
+@media (min-width:480px){
+    header{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+    header img{
+        cursor: pointer;
+    }
+    header button{
+        display: none;
+    }
+    #headerNav{
+        display: none;
+    }
+    #mainContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 40px;
+        margin-bottom: 40px;
+    }
+    #mainImageContainer{
+        margin:70px 0px 100px;
+    }
+    #mainImageContainer img{
+        width: 100%;
+    }
+    #mainInfoContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; 
+        text-align: right;
+    }
+    #mainInfoContainer h2{
+        color:#232C50;  
+        font-weight: 700;
+        font-size: 49px;  
+    }
+    #mainInfoContainer p{
+        margin-top: 28px;
+        color: #000000;
+        font-weight: 500;
+        line-height: 26px;
+    }
+    .button{
+        display: flex;
+        align-self: flex-end;
+        justify-content: center;
+        align-items: center;
+        background-color: #8B48BF;
+        color: white;
+        width: 134px;
+        height: 44px;
+        border-radius: 50px;
+        border:0px;
+        margin-top:28px;
+        font-weight: normal;
+        cursor: pointer;
+    }
+    #secondaryContainer{
+        background-color:#3CDDF3;
+        color: white;
+    }
+    #secondaryContainer h2{
+        font-weight: 700;
+        font-size: 36px;
+        text-align: left;
+        padding:40px 20px 10px;
+    }
+    #secondaryContainer p{
+        font-weight: normal;
+        text-align: left;
+        padding:40px 20px;
+        line-height:24.18px;
+    }
+    #cardsContainer{
+        margin: 65px 0px 68px 34px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .card p{
+        color: #B3B2B7;
+        line-height: 25.52px;
+        margin: 21px 18px 20px 0px;
+        padding: 10px;
+    }
+    .title{
+        display: flex;
+        align-items: center;
+        background-color: #8B48BF4D;
+        border-radius: 20px 0px 0px 20px;
+    }
+    .title h4{
+        padding: 10px;
+        font-weight: 700;
+        line-height: 23px;
+    }
+    .listCircle{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 69px;
+        height: 43px;
+        background: #8B48BF;
+        border-radius: 30px;
+        color: white;
+        font-weight: 700;
+    }
+    #avatarContainer h2{
+        text-align: center;
+        color:#242E53;
+        font-weight: 700;
+        font-size:39px;
+        line-height: 61px;
+    }
+    .avatarCards:nth-child(odd){
+        display: none;
+    }
+    .avatarCards{
+        margin:109px 17px 0px;
+        background-color: #F5F5F5;
+        text-align: center;
+    }
+    .avatarCards img{
+        position: relative;
+        top: -35px;
+    }
+    .avatarCards h4{
+        color:#3F4868;
+        font-weight: 700;
+        line-height: 25.17px;
+    }
+    .avatarCards p{
+        font-weight: 500;
+        color: #B9B9C1;
+        padding: 21px 26px 39px;
+        line-height:25.06px;
+    }
+    #moreButton{
+        margin:0px auto;
+        margin-top: 57px;
+        margin-bottom: 57px;
+    }
+    #footerContainer div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #3CDDF3;
+        color: white;
+    }
+    #footerContainer h2{
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 48px;
+        text-align: center;
+        padding: 40px 80px;     
+    }
+    #whiteButton{
+        width: 134px;
+        height: 44px;  
+        background-color: #232C50;
+        color: white;
+        border:0px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        margin-bottom:40px;
+        cursor: pointer;
+    }
+    #footerContainer2{
+        background-color: #1E1E26;
+        color: white;
+    }
+    #formContainer{
+        padding: 40px 50px 47px;
+    }
+    #formContainer input{
+        width: 296px;
+        height: 44px;
+        background: #FFFFFF;
+        color: #A0A0A0;
+        border-radius: 50px;
+        border:0px;
+        padding: 10px;
+        font-weight: 600;
+    }
+    #sendButton{
+        width: 60px;
+        height: 42px;
+        background: #8B48BF;
+        border-radius: 50px;
+        border: 0px;
+        color: white;
+        margin-left: 9px;
+        cursor: pointer;
+        font-weight: normal;
+    }
+    #nav-bar{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    #nav-bar ul li{
+        list-style: none;
+        margin-bottom:12px;
+    }
+    #nav-bar ul li a{
+        text-decoration: none;
+        color:#FFFFFF;
+        font-weight: 400;
+        line-height: 23px;
+    }
+    #logosContainer{
+        padding:10px 50px;
+        margin: 35px 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #socialList{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+    }
+    #copy{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #copy span{
+        margin:35px 0px 50px;
+        color: #8C8C94;
+        font-weight: 500;
+        line-height: 18px;
+        font-size: 12.5px;
+    }
+    #logoDark{
+        display: flex;
+        justify-content: center;
+        width: 107px;
+        align-self: center;
+        margin-top: 50px;
+    }
+}
+/*Desktop*/
+@media (min-width:1440px){
+    header button{
+        display: block;
+        cursor: pointer;
+        transition: transform 400ms;
+    }
+    header button:hover{
+        transform: scale(1.1);
+    }
+    #hamburgerIcon{
+        display: none;
+    }
+    #headerNav{
+        display: flex;
+        color:#242E52;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 22px;
+    }
+    #headerNav ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #headerNav ul li{
+        margin-right: 28px;
+    }
+    #headerNav ul li a{
+        text-decoration: none;
+        color:#242E52;
+        transition: color 400ms;
+    }
+    #headerNav ul li a:hover{
+        color:#242E5299;
+    }
+    header button{
+        width: 134px;
+        height: 44px;
+        background: #8B48BF;
+        box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        border: 0px;
+        color: white;
+    }
+    #mainContainer{
+        flex-direction: row;
+        margin: 100px 130px 120px 0px;
+    }
+    #mainImageContainer{
+        flex-basis: 50%;
+        margin-bottom: 0px;
+    }
+    #mainInfoContainer{
+        flex-basis: 50%;
+        padding-left: 90px;
+    }
+    #mainInfoContainer p{
+        padding-left: 20px;
+    }
+    #mainInfoContainer button{
+        transition: transform 400ms;
+    }
+    #mainInfoContainer button:hover{
+        transform: scale(1.1);
+    }
+    #secondaryContainer{
+        display: flex;
+        justify-content: space-around;
+        background-color: #8B48BF;
+        padding: 40px 220px;
+    }
+    #secondaryContainer h2{
+        padding: 0px;
+    }
+    #secondaryContainer p{
+        padding: 0px;
+        flex-basis: 50%;
+    }
+    #cardsContainer{
+        padding:0px 150px 48px;
+        margin:0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #F5F5F5;
+    }
+    .title{
+        background-color: transparent;
+    }
+    .card{
+        flex-basis: 37%;
+        margin: 40px 74px 0px;
+    }
+    .card p{
+        padding: 10px 0px 0px 50px;
+    }
+    #avatarContainer{
+        margin:0px 71px;
+        margin-top:97px;
+    }
+    .avatarCards{
+        margin:109px 0px 0px;
+    }
+    .avatarCards:nth-child(odd){
+        display: block;
+    }
+    #avatarCardsContainer{
+        display: flex;
+        flex-direction: row;
+    }
+    #moreButton{
+        margin-bottom: 180px;
+        transition: all 400ms;
+    }
+    #moreButton:hover{
+        background-color:#8B48BFB2;
+        transform: scale(1.1);
+    }
+    #footerContainer div{
+        background-color: #8B48BF;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #footerContainer h2{
+        flex-basis: 50%;
+        text-align: left;
+        padding: 64px 80px;
+    }
+    #whiteButton{
+        margin-bottom: 0px;
+        background-color: #FFFFFF;
+        color: #8B48BF;
+        transition: transform 400ms;
+    }
+    #whiteButton:hover{
+        transform: scale(1.1);
+    }
+    #footerContainer2{
+        display: flex;
+        flex-direction: row;
+    }
+    #footerContainer2 #container{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    #formContainer{
+        order: 2;
+        display: flex;
+        flex-direction: row;
+        padding: 56px 0px;
+    }
+    #formContainer input{
+        width:244px;
+    }
+    #navContainer{
+        order: 1;
+        padding: 52px 0px;
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 30%;
+    }
+    #nav-bar{
+        width: 100%;
+        justify-content: space-between;
+    }
+    #logosContainer{
+        order: 0;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        height: 100%;
+        margin: 0px;
+    }
+    #copy{
+        position: absolute;
+        bottom: 43px;
+        right: 164px;
+    }
+    #copy span{
+        margin:0px;
+    }
+    #logoDark{
+        order: -1;
+        align-self: normal;
+        margin:0px;
+    }
+    #socialList li{
+        margin-right:13px;
+    }
+    #sendButton{
+        animation: boton 600ms infinite alternate;
+    }
+}
