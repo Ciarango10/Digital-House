@@ -1,0 +1,3 @@
+SELECT * 
+FROM movies
+LIMIT 5
