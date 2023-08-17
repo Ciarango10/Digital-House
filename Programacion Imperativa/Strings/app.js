@@ -34,6 +34,5 @@ console.log(oracion.replace("Python","JS"));
 let cancion = "And bingo was his name, oh!";
 console.log(cancion.split(', '))//Separa el string por cada coma que encuentre
 
-
 //Devuelve miTexto, pero convirtiendo todo a mayúsculas.
 console.log(cancion.toUpperCase());
