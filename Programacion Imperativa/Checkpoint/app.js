@@ -55,10 +55,10 @@ arrayHandler([1,2,3,4],["h","o","l","a"]);
 
 function palindromo(palabra){
     for (let i = 0, j = palabra.length-1; i < palabra.length; i++,j--){
-        if(palabra[i] != palabra[j]){
+        if(palabra[i].toLowerCase() != palabra[j].toLowerCase()){
             return false;
         }
     }
     return true;
 }
-console.log(palindromo("Enrique"));
+console.log(palindromo("Ana"));
