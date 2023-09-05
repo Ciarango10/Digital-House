@@ -30,7 +30,7 @@ let oracion = "Aguante Python!";
 console.log(oracion.replace("Python","JS"));
 
 //SPLIT()
-//Divide un string en partes, recibe un string que se usara como separador de las partes
+//Divide un string en partes,y lo convierte en un arreglo. Recibe un parametro que se usara como separador
 let cancion = "And bingo was his name, oh!";
 console.log(cancion.split(', '))//Separa el string por cada coma que encuentre
 
