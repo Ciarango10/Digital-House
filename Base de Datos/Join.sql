@@ -1,3 +1,4 @@
+-- Devuelve los elementos coincidentes entre dos o mas tablas.
 SELECT cliente.id, cliente.nombre, factura.fecha
 FROM cliente 
 INNER JOIN factura
