@@ -15,8 +15,3 @@ FROM actors
 INNER JOIN actor_movie ON actors.id = actor_movie.actor_id
 INNER JOIN movies ON movies.id = actor_movie.movie_id
 WHERE movies.title LIKE "La Guerra de las galaxias%";
-
-SELECT genres.name, COUNT(movies.id)
-FROM movies
-RIGHT JOIN genres ON genres.id = movies.genre_id
-GROUP BY genres.name

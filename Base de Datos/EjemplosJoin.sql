@@ -38,3 +38,8 @@ SELECT *
 FROM pelicula 
 LEFT JOIN artista_x_pelicula ON artista_x_pelicula.pelicula_id = pelicula.id
 LEFT JOIN artista ON artista.id = artista_x_pelicula.artista_id;
+
+SELECT genres.name, COUNT(movies.id)
+FROM movies
+RIGHT JOIN genres ON genres.id = movies.genre_id
+GROUP BY genres.name
