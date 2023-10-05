@@ -1,5 +1,6 @@
 -- INNER JOIN
 -- Devuelve la interseccion de todos los registros donde se cruzan dos o mas tablas.
+-- Devuelve los elementos coincidentes entre dos o mas tablas.
 SELECT cliente.id, cliente.nombre, factura.fecha
 FROM cliente 
 INNER JOIN factura
