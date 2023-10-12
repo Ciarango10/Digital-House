@@ -1,3 +1,4 @@
+package EjercitacionTiposDatos;
 public class Main {
     public static void main(String[] args) {
         String tipoAnimal, nombre, pregunta;
