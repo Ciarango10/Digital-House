@@ -11,7 +11,11 @@ FROM empleados;
 
 -- Peso en KBytes sin decimales
 SELECT bytes,
-CONCAT(FLOOR(bytes / 1024), ' kb') AS KBYTES
+CONCAT(FLOOR(bytes / 1024), ' kb') AS KBYTES -- FLOOR(), redoondea hacia abajo
+FROM canciones;
+
+SELECT bytes,
+CONCAT(CEILING(bytes / 1024), ' kb') AS KBYTES -- CEILING(), redoondea hacia abajo
 FROM canciones;
 
 -- Precio formateado en 3 decimales
