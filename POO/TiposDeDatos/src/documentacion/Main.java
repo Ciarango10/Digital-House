@@ -1,4 +1,4 @@
-package Documentacion;
+package documentacion;
 
 import java.util.Date;
 public class Main {

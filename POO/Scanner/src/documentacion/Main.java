@@ -1,4 +1,4 @@
-package Documentacion;
+package documentacion;
 
 import java.util.Scanner; //NECESARIO PARA USAR ESCANER
 

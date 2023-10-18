@@ -1,4 +1,4 @@
-package EjercitacionFunciones;
+package ejercitacion;
 
 import java.util.Scanner;
 
