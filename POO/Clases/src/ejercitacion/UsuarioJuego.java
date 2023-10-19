@@ -27,7 +27,6 @@ public class UsuarioJuego {
     public void setClave(String clave) {
         this.clave = clave;
     }
-
     public void setPuntaje(double puntaje) {
         this.puntaje = puntaje;
     }
