@@ -1,0 +1,14 @@
+Herencia:
+    - Implica que una superclase o clase base hereda sus funciones y atributos a una subclase o clase derivada.
+    - La palabra reservada que nos permite realizar herencia entre clases es extends.
+    - Palabras Clave:
+        Es un.
+Protected:
+    - Es privado para otras clases, pero público para las clases hijas.
+Sobrecarga:
+    - Es la creación de varios métodos con el mismo nombre pero con diferente lista de tipos de parámetros.
+    - El nombre, cantidad, tipo y orden de parametros forman parte de la firma de un metodo y deben ser diferentes para sobrecargarlos.
+Sobreescritura:
+    - Es la capacidad que tenemos de poder modificar los metodos que las clases hijas heredan de sus clases padre para que funcionen
+    distinto o sean iguales pero con alguna u otra funcionalidad adicional.
+    - En esta caso los metodos deben tener la misma firma.

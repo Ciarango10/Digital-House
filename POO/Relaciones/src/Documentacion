@@ -1,0 +1,18 @@
+Asociación:
+    - Relación estructural que describe una conexión entre objetos
+    - Palabras Clave:
+        Tiene,conoce.
+Uso:
+    - Colaboracion temporal, se pasa por parametro el objeto en uno de los metodos del otro
+    - Palabras Clave:
+        Usa.
+Agregación:
+    - Relación entre los agregados y el todo, pero los componentes pueden existir aunque el todo
+    fuese destruido.
+    - Palabras Clave:
+        Tiene,conoce y es parte de.
+Composición:
+    - La composición es un tipo de agregación que es más fuerte, donde todas las partes (clases)
+      solamente pueden pertenecer a un todo, si el todo no existe las clases no funcionan.
+    - Palabras Clave:
+        Esta compuesta por.
