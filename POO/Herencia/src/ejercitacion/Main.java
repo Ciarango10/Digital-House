@@ -5,10 +5,17 @@ public class Main {
         asteroide1.irA(12,30,'N');
 
         Nave nave1 = new Nave(30,40,'E',61.00);
+        Nave nave2 = new Nave(30,40,'E',61.00);
+
+        System.out.println(nave1.equals(nave2));
+
         nave1.irA(25,8,'S');
 
         System.out.println(nave1.getVida());
         nave1.restarVida(40);
         System.out.println(nave1.getVida());
+
+        System.out.println(nave1.toString());
+
     }
 }

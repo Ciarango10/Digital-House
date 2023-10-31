@@ -1,5 +1,7 @@
 package ejercitacion;
 
+import java.util.Objects;
+
 public class Objeto {
     private int posx;
     private int posy;
@@ -40,4 +42,25 @@ public class Objeto {
         posy = y;
         this.direccion = direccion;
     }
+
+    @Override
+    public String toString() {
+        return "Objeto{" +
+                "posx=" + posx +
+                ", posy=" + posy +
+                ", direccion=" + direccion +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || this.getClass() != o.getClass()){
+            return false;
+        }
+        else{
+            Objeto objetoAux = (Objeto) o;
+            return this.getPosx() == objetoAux.getPosx() && this.getPosy() == objetoAux.getPosy() && this.getDireccion() == objetoAux.getDireccion();
+        }
+    }
+
 }
