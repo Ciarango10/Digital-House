@@ -1,0 +1,11 @@
+Clase Abstracta:
+- No se puede instanciar directamente. En su lugar, se utiliza como base para otras clases que heredan de ella.
+- Una clase abstracta tiene que tener como minimo un metodo abstracto.
+
+Método Abstracto:
+Un método abstracto es un método que se declara en una clase abstracta sin proporcionar una implementación concreta.
+La implementación de un método abstracto se deja a las clases que heredan de la clase abstracta. Cada clase que hereda
+de la clase abstracta debe proporcionar su propia implementación para los métodos abstractos definidos en la clase abstracta.
+
+Polimorfismo:
+Capacidad que tiene un objetos de una clase en comportarse como otro, es un objeto que funciona de diversas formas.
