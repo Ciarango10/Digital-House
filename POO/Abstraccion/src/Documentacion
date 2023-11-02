@@ -9,3 +9,6 @@ de la clase abstracta debe proporcionar su propia implementación para los méto
 
 Polimorfismo:
 Capacidad que tiene un objetos de una clase en comportarse como otro, es un objeto que funciona de diversas formas.
+
+Casting:
+Sirve para hacer una conversion de tipo de dato a otro.

@@ -6,6 +6,9 @@ public class Main {
         String[] nombres; //CON LOS CORCHETES SE INDICA QUE ES UN ARRAY
         nombres = new String[5]; //SE DEBE DEFINIR DENTRO DE LOS CORCHETES EL TAMAÑO
 
+        // OTRA FORMA DE DEFINIR UN ARREGLO
+        String[] nombres2 = {"Ivan", "Efren","Hugo"};
+
         //ASIGNAR VALORES AL ARRAY, DADO QUE ES UNA ESTRUCTURA FIJA NO SE PUEDEN ELIMINAR ELEMENTOS
         nombres[0] = "Juan";
         nombres[1] = "Mario";
