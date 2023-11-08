@@ -1,0 +1,5 @@
+Las interfaces son también relaciones del tipo “es un”, muy similares a las clases abstractas: se definen con la palabra
+clave "interface" en vez de "class". Todos sus métodos son abstractos, por lo cual, no es necesaria la palabra "abstract"
+y, al igual que las clases abstractas, los métodos no definen un cuerpo.
+- Para usarla en otra clase usamos el 'implements'.
+- Una clase puede implementar multiples interfaces.
