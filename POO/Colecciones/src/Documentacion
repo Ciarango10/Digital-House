@@ -1,0 +1,42 @@
+1) Agregar Elementos:
+    - List, Set:
+    Proporcionan el método add que recibe como parámetro un Object y, como toda clase hereda de Object,
+    podemos almacenar cualquier tipo de objeto en ellas.
+    - Set:
+    No almacenan los valores repetidos ni nulos.
+        - HashSet:
+        No respeta el orden de inserción.
+        - LinkedHashSet:
+        A diferencia de la HashSet, sí respetan el orden de inserción.
+        - TreeSet:
+        Los inserta ordenadamente, si son elementos String los inserta alfabéticamente.
+    - Map:
+    Poseen un método llamado put que recibe dos parámetros: una key y un valor. Permiten valores duplicados, pero no keys duplicadas.
+        - Hashmap:
+        No respetan el orden de inserción.
+        - LinkedHashMap:
+        A diferencia de las HashMap, sí respetan el orden de inserción.
+        - TreeMap:
+        Los inserta ordenadamente según la key. En este caso, la Key es un entero, por lo tanto, los ordena de menor a mayor.
+
+2) Eliminar Elementos:
+    - List:
+    Se pueden eliminar por indice o valor.
+    - Set:
+    Se pueden eliminar pasando por parametros el valor almacenado.
+    - Map:
+    Se pueden eliminar pasando por parametros el key.
+
+3) Ordenar o buscar elementos:
+    - List:
+    Podemos utilizar el método get que recibe como parámetro el índice de la posición.
+    - Set:
+    Para obtener un elemento debemos buscarlo recorriendo la colección, ya que las Set no tienen índice.
+    - Map:
+    Para obtener un elemento, podemos hacerlo a través de su Key con el método get.
+
+
+
+
+
+
