@@ -1,6 +1,6 @@
-package com.company;
+package documentacion.excepcionespropias;
 
-import com.company.FechaException;
+import documentacion.excepcionespropias.FechaException;
 
 public class Fecha {
     int day;
@@ -12,7 +12,7 @@ public class Fecha {
         if (d<1||d>31)
             throw new FechaException("Error en el día");
         day=d;
-        if (d<1||d>31)
+        if (m<1||m>12)
             throw new FechaException("Error en el mes");
         month=m;
         year=y;

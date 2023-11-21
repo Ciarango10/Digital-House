@@ -1,4 +1,4 @@
-package operaciones;
+package ejemplo.operaciones;
 
 import java.util.*;
 

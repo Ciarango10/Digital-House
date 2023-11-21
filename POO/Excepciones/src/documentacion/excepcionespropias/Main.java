@@ -1,14 +1,8 @@
-package com.company;
+package documentacion.excepcionespropias;
 
 public class Main {
 
-    public static void main(String[] args) {
-
-        try {
-            Fecha fecha= new Fecha(100,10,2000);}
-        catch (FechaException e){
-            System.err.println(e.getMessage());
-
-        }
+    public static void main(String[] args) throws FechaException {
+            Fecha fecha= new Fecha(31,13,2000);
     }
 }

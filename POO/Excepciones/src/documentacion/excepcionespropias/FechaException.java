@@ -1,6 +1,6 @@
-package com.company;
+package documentacion.excepcionespropias;
 
-public class FechaException extends  Exception{
+public class FechaException extends Exception{
 
     public FechaException()
     {

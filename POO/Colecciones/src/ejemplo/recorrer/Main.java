@@ -1,4 +1,4 @@
-package recorrer;
+package ejemplo.recorrer;
 
 import java.util.*;
 
