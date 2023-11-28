@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registro estudiantil - Testing I</title>
+</head>
+<img src="images/DH.jpg" style="float: right" width="700" height="400" >
+<body>
+    <section class="control-panel">
+        <div class="input-container">
+            <input type="text" id="name" placeholder="Nombre y Apellido">
+        </div>
+        <div class="input-container">
+            <input type="number" id="age" placeholder="Edad">
+        </div>
+    </div class ="userLevel">
+    <label for="userLevel">Nivel educativo:</label>
+    <select id="userLevel">
+        <option value ="Selecciona un nivel" hidden>Selecciona un nivel</option>
+        <option value="Licenciatura">Licenciatura</option>
+        <option value="Maestría">Maestría</option>
+        <option value="Doctorado">Doctorado</option>
+    </select>
+    <br>
+    <br>
+    <span id="userLevelSelection"></span>
+    </div>
+        <button id="btnAddUser" class="button">Agregar estudiante</button>
+    </section>
+    <section class="user-output">
+        <ul class="user-list"></ul>
+    </section>
+    <script src="dist/main.js"></script>
+</body>
+</html>

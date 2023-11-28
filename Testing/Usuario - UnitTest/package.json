@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "webpack app.js --mode development --watch",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "test:coverage": "jest --coverage"
   },
   "keywords": [
     "js",

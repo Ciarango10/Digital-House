@@ -1,0 +1,7 @@
+===package.json===
+Este es un archivo de configuración creado a partir del uso del comando npm init. Acá verás toda la configuración necesaria para que nuestro formulario ande.
+Sabrás mas de su funcionamiento en la materia de Backend I ;)
+
+===package-lock.json===
+Este es un archivo generado automáticamente por nodeJS para estandarizar y hacer seguimiento de las dependencias y versiones usadas en el programa.
+Sabrás mas de su funcionamiento en la materia de Backend I ;)

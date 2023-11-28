@@ -4,7 +4,8 @@
   "description": "",
   "main": "calc.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "keywords": [
     "test",

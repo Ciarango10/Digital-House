@@ -1,0 +1,68 @@
+body {
+  font-family: sans-serif;
+}
+
+.control-panel {
+  width: 30rem;
+  font-size: 18px;
+  margin: 5rem;
+}
+
+.input-container {
+  margin: 2rem;
+}
+
+/* Containers de input */
+.input-container label,
+.input-container input {
+  display: block;
+  width: 100%;
+}
+
+.input-container input {
+  font: inherit;
+}
+/* botn agregar  */
+.button {
+  font: inherit;
+  background: #521751;
+  color: white;
+  border: 1px solid #521751;
+  padding: 1rem 1rem;
+  border-radius: 3px;
+  margin: 0 3rem;
+}
+
+/*listado estudiantes*/
+.user-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 5rem;
+  padding: 1.5;
+}
+/* Box de items */
+.user-item {
+  font-size: 16px;
+  margin-bottom: rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(238, 40, 145, 0.26);
+  width: 30rem;
+}
+
+/* Dropdown de nivel educativo */
+label {
+  font-family: inherit;
+  font-size: inherit;
+  padding: inherit;
+  margin-bottom: 8px;
+}
+
+select {
+  font-size: inherit;
+  padding:inherit;
+  width: 64%;
+  text-align: center;
+  float: right;
+	margin-right: 1.5em;
+}
