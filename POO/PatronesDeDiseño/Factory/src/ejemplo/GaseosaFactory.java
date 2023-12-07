@@ -26,7 +26,7 @@ public class GaseosaFactory {
     public static Gaseosa construir(String tipo)
     {
 
-        /*indetificar el parámetro recibido con un switch*/
+        /*identificar el parámetro recibido con un switch*/
         switch (tipo){
             case "Coca":
                 return new GaseosaCola();

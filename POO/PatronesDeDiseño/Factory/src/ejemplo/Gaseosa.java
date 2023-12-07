@@ -2,7 +2,7 @@ package ejemplo;
 
 /*clase abstracta de la que herederán los productos concretos*/
 public abstract class Gaseosa {
-    private  String nombre;
+    private String nombre;
 
     public String getNombre(){
         return nombre;
