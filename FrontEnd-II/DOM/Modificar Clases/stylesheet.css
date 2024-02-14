@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.titulo-destacado {
+    color:crimson;
+    font-size: 50px;
+    border: solid 1px green;
+    border-radius: 10px;
+}
+
+.fondo {
+    background-color: dodgerblue;
+}
