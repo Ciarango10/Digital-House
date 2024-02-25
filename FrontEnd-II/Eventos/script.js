@@ -1,7 +1,8 @@
 //FORMAS DE USAR EVENTOS
 window.addEventListener("load", function () {
     let youtubeButton = this.document.querySelector(".youtube-button"); // OBTENEMOS EL BOTON
-    youtubeButton.addEventListener("click", function () { //EVENTO CLICK DEL BOTON 
+    youtubeButton.addEventListener("click", function (e) { //EVENTO CLICK DEL BOTON 
+        console.log(e.target.id); //OBTENER EL ID DEL BOTON
         alert("Nos redirigimos hacia Youtube");
     });
 
