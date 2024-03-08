@@ -44,7 +44,12 @@ function recorrerMiembros() {
     let datos = JSON.parse(jsonData);
     let miembros = document.querySelector("#miembros");
     for (let i = 0; i < datos.members.length; i++) {
-      miembros.innerHTML += `<li>${datos.members[i].name}</li>`
+      miembros.innerHTML += 
+      `<li>
+        <h2>Héroe: ${datos.members[i].name}</h2>
+        <h5>Identidad Ouclta: ${datos.members[i].secretIdentity}</h5>
+        <p>Edad: ${datos.members[i].age}</p>
+      </li>`
     };
 }
 recorrerMiembros();
