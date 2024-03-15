@@ -39,19 +39,19 @@
         if (listadoComentarios.length > 0) {
             setTimeout(() => {
                 console.log("Resuelvo peticion");
-                resolve(listadoComentarios);
+                resolve(listadoComentarios)
             }, 2500);                    
         } else { // indicar que el recurso no tiene contenido y tengo que manejar el rechazo de la respuesta
             console.log("Rechazo promesa");
-            reject( { message: "Recurso no encontrado", status: 404 } );
+            reject( { message: "Recurso no enncontrado", status: 404 } )
         }
      })    
  }
 
-// console.log(getData());
+//  console.log(getData());
 getData()
 .then( (datos) => {
+    console.log("desde el .then");
     console.log(datos);
 })
-.catch((error) => console.log(error));
-
+.catch((error) => console.log(error))

@@ -87,8 +87,8 @@ boton.addEventListener("click", () => {
 
     consultaAsincrona(endpoint)
     .then( (respuesta) => {
-        console.log(respuesta);
-        renderizarElementos(respuesta);
+        console.log(respuesta); // aqui recibo el objeto respuesta... y puedo operarlo ya si quiero
+        renderizarElementos(respuesta)
     })
     .catch( (error) => {
         console.log(error);
@@ -150,5 +150,6 @@ function renderizarElementos(listado){
             <p>${comentario.body}</p>
         </div>`
     })
-    comentarios.innerHTML = comentariosRenderizados.join("");
+    console.log(comentariosRenderizados);
+    comentarios.innerHTML = comentariosRenderizados.join("")
 }
