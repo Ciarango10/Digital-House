@@ -54,7 +54,7 @@ window.addEventListener('load', function () {
                 form.reset()
 
                 // Redireccionamos a nuestro dashboard de la ToDo
-                location.replace("/mis-tareas.html");
+                location.replace("./mis-tareas.html");
             }
         })
         .catch(err => {
