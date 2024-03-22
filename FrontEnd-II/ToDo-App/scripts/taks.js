@@ -241,6 +241,9 @@ window.addEventListener('load', function () {
   function botonBorrarTarea() {
 
     btnEliminar = document.querySelectorAll(".borrar");
+    console.log(btnEliminar);
+
+    // A cada boton le asignamos una funcionalidad
     btnEliminar.forEach(boton => {
       boton.addEventListener('click', ev => {
         let confirmarEliminarTarea = confirm("¿Está seguro que desea eliminar la tarea?");
