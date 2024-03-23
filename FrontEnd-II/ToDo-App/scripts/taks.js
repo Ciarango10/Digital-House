@@ -197,17 +197,17 @@ window.addEventListener('load', function () {
       boton.addEventListener("click", ev => {
         console.log(ev.target.id);
         const id = ev.target.id;
-        const urlChange = `${urlTareas}/${id}`
+        const urlChange = `${urlTareas}/${id}`;
 
-        const payload = {}
+        const payload = {};
 
         // Segun el tipo de boton que fue clickeado, cambiamos el estado de la tarea
         if(ev.target.classList.contains("incompleta")) {
           // Si esta completada la paso a pendiente
-          payload.completed = false
+          payload.completed = false;
         } else {
           // Si no esta pendiente, la paso completada
-          payload.completed = true
+          payload.completed = true;
         }
         console.log(payload);
 
