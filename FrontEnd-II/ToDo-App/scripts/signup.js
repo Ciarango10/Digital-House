@@ -8,8 +8,21 @@ window.addEventListener('load', function () {
     const passwordConfirmation = document.querySelector("#inputPasswordRepetida");
     const url = "https://todo-api.ctd.academy/v1";
 
-
+    //Aqui en este punto nos encargamos de mandar a llamar a las funciones normalizar Texto y las validaciones
+    //Cuando modifico el contenido del input se desencadena el evento el cual lo capturará la función que se encargará de validar
+    nombre.addEventListener("input", e => validarTexto(e));
+    apellido.addEventListener("input", e => validarTexto(e));
+    email.addEventListener("input", e => validarEmail(e));
+    password.addEventListener("input", e => validarContrasenia(e));
+    passwordConfirmation.addEventListener("input", e => compararContrasenias(e.target, password.value));
     
+    // El evento blur desencadenar el evento una vez que abandono el input,
+    // por eso si esta vacio, le indico que lo obligue a cargarlo
+    nombre.addEventListener("blur", e => isEmpty(`Se requiere que ingrese su ${nombre.name}`, e));
+    apellido.addEventListener("blur", e => isEmpty(`Se requiere que ingrese su ${apellido.name}`, e));
+    email.addEventListener("blur", e => isEmpty(`Se requiere que ingrese su ${email.name}`, e));
+    password.addEventListener("blur", e => isEmpty(`Se requiere que ingrese su ${password.name}`, e));
+    passwordConfirmation.addEventListener("blur", e => isEmpty(`Se requiere que ingrese su ${passwordConfirmation.name}`, e));
 
     /* -------------------------------------------------------------------------- */
     /*            FUNCIÓN 1: Escuchamos el submit y preparamos el envío           */
@@ -17,9 +30,9 @@ window.addEventListener('load', function () {
     form.addEventListener('submit', function (event) {
         event.preventDefault(); // prevenimos el comportamiento por defecto del formulario
         const payload = {
-            firstName: nombre.value,
-            lastName: apellido.value,
-            email: email.value,
+            firstName: normalizarTexto(nombre.value),
+            lastName: normalizarTexto(apellido.value),
+            email: normalizarEmail(email.value),
             password: password.value
         }
 
@@ -31,8 +44,12 @@ window.addEventListener('load', function () {
             body: JSON.stringify(payload)
         }
 
-        //Realizamos el registro
-        realizarRegister(settings);
+        //Validamos si hay contenido en los inputs
+        if(email.value.length > 0 && password.value.length > 0 && nombre.value.length > 0 && apellido.value.length > 0 && compararContrasenias(passwordConfirmation, password.value)) {
+            console.log("Todo OK, pasamos a hacer la request");
+            //Realizamos el registro
+            realizarRegister(settings);
+        }
     });
 
     /* -------------------------------------------------------------------------- */
