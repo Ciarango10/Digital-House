@@ -8,8 +8,8 @@ window.addEventListener('load', function () {
     const passwordConfirmation = document.querySelector("#inputPasswordRepetida");
     const url = "https://todo-api.ctd.academy/v1";
 
-    //Aqui en este punto nos encargamos de mandar a llamar a las funciones normalizar Texto y las validaciones
-    //Cuando modifico el contenido del input se desencadena el evento el cual lo capturará la función que se encargará de validar
+    // Aqui en este punto nos encargamos de mandar a llamar a las funciones normalizar Texto y las validaciones
+    // Cuando modifico el contenido del input se desencadena el evento el cual lo capturará la función que se encargará de validar
     nombre.addEventListener("input", e => validarTexto(e));
     apellido.addEventListener("input", e => validarTexto(e));
     email.addEventListener("input", e => validarEmail(e));
@@ -29,6 +29,11 @@ window.addEventListener('load', function () {
     /* -------------------------------------------------------------------------- */
     form.addEventListener('submit', function (event) {
         event.preventDefault(); // prevenimos el comportamiento por defecto del formulario
+
+        // Aquí podemos mostrar el spinner para indicar a la persona que se
+        // ha iniciado el proceso de registro
+        mostrarSpinner();
+                
         const payload = {
             firstName: normalizarTexto(nombre.value),
             lastName: normalizarTexto(apellido.value),
@@ -44,11 +49,14 @@ window.addEventListener('load', function () {
             body: JSON.stringify(payload)
         }
 
-        //Validamos si hay contenido en los inputs
+        // Validamos si hay contenido en los inputs
         if(email.value.length > 0 && password.value.length > 0 && nombre.value.length > 0 && apellido.value.length > 0 && compararContrasenias(passwordConfirmation, password.value)) {
             console.log("Todo OK, pasamos a hacer la request");
-            //Realizamos el registro
+            // Realizamos el registro
             realizarRegister(settings);
+        } else {
+            // Si alguno de los campos es incorrecto, ocultamos el spinner
+            ocultarSpinner();
         }
     });
 
@@ -66,13 +74,11 @@ window.addEventListener('load', function () {
         .then(data => {
             console.log(data.jwt);
             if(data.jwt) {
-
                 // Guardamos el dato jwt en el local storage (este token de autenticación)
                 localStorage.setItem("jwt", JSON.stringify(data.jwt));
-
                 // Limpiar el formulario
                 form.reset();                       
-                // redireccionamos a nuestro dashboard de la ToDo
+                // Redireccionamos a nuestro dashboard de la ToDo
                 location.replace("./mis-tareas.html");
             }
         })
@@ -84,6 +90,8 @@ window.addEventListener('load', function () {
                 console.error("Error del servidor");
                 alert("Error de Servidor, comúniquese con el proveedor");                
             }
+            // Ocultamos el spinner en caso de error
+            ocultarSpinner();
         });
     };
 });

@@ -8,6 +8,7 @@ if(!localStorage.jwt) {
 
 /* ------ comienzan las funcionalidades una vez que carga el documento ------ */
 window.addEventListener('load', function () {
+  renderizarSkeletons(5, ".tareas-pendientes");
 
   /* ---------------- variables globales y llamado a funciones ---------------- */
   const btnCerrarSesion = document.querySelector("#closeApp");
@@ -21,7 +22,7 @@ window.addEventListener('load', function () {
   const token = JSON.parse(localStorage.jwt);
 
   obtenerNombreUsuario();
-  consultarTareas();
+  setTimeout(consultarTareas, 1000);
 
   /* -------------------------------------------------------------------------- */
   /*                          FUNCIÓN 1 - Cerrar sesión                         */
@@ -83,6 +84,7 @@ window.addEventListener('load', function () {
     fetch(urlTareas, settings)
       .then(response => response.json())
       .then(tareas => {
+        removerSkeleton(".tareas-pendientes");
         console.log(tareas);
         renderizarTareas(tareas);
         botonesCambioEstado();

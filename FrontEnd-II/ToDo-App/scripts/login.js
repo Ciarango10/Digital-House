@@ -21,6 +21,10 @@ window.addEventListener('load', function () {
     form.addEventListener('submit', function (event) {
        event.preventDefault(); // Prevenimos el comportamiento por defecto del formulario
         
+        // Aquí podemos mostrar el spinner para indicar a la persona que se
+        // ha iniciado el proceso de registro
+        mostrarSpinner();
+                
        // Objeto de lo que capturamos en los inputs para mandarlo en el fetch
         const payload = {
             email : normalizarEmail(email.value),
@@ -41,6 +45,9 @@ window.addEventListener('load', function () {
             console.log("Todo OK, pasamos a hacer la request");
             // Lanzamos la consulta del login a la API
             realizarLogin(settings);
+        } else {
+            // Si alguno de los campos es incorrecto, ocultamos el spinner
+            ocultarSpinner();
         }
     });
 
@@ -69,6 +76,8 @@ window.addEventListener('load', function () {
             }
         })
         .catch(err => {
+            // Ocultamos el spinner en caso de error
+            ocultarSpinner();
             console.error(err.status);
             if (err.status == 400) {
                 console.warn("Contraseña Incorreta");
