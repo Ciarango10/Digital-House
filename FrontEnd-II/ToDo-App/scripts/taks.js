@@ -8,6 +8,8 @@ if(!localStorage.jwt) {
 
 /* ------ comienzan las funcionalidades una vez que carga el documento ------ */
 window.addEventListener('load', function () {
+  AOS.init(); // Inicializo la librería del AOS
+
   renderizarSkeletons(5, ".tareas-pendientes");
 
   /* ---------------- variables globales y llamado a funciones ---------------- */
@@ -30,14 +32,38 @@ window.addEventListener('load', function () {
 
   btnCerrarSesion.addEventListener('click', function () {
 
-    const cerrarSesion = confirm("¿Está seguro que desea cerrar sesion?");
-    
-    if(cerrarSesion) {
-      // Limpiar el LocalStorage
-      localStorage.clear();
-      // Redirigir a la pagina de inicio
-      location.replace("./index.html");
-    }
+    // const cerrarSesion = confirm("¿Está seguro que desea cerrar sesion?");
+    // if(cerrarSesion) {
+    //   // Limpiar el LocalStorage
+    //   localStorage.clear();
+    //   // Redirigir a la pagina de inicio
+    //   location.replace("./index.html");
+    // }
+
+    Swal.fire({
+      title: "¿Cerrar Sesión?",
+      text: "¿Estas seguro que deseas cerrar sesión?",
+      icon: "question",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Si, confirmo!"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Hasta pronto!",
+          text: "Te esperamos pronto",
+          icon: "success"
+        });
+        setTimeout(() => {
+          // Limpiar el LocalStorage
+          localStorage.clear();
+          // Redirigir a la pagina de inicio
+          location.replace("./index.html");
+        },2000)
+
+      }
+    });
 
   });
 
@@ -155,7 +181,7 @@ window.addEventListener('load', function () {
 
         // Imprimir las tareas completadas
         tareasTerminadas.innerHTML += `
-        <li class="tarea">
+        <li class="tarea" data-aos="flip-up" data-aos-duration="2500">
           <div class="hecha">
             <i class="fa-regular fa-circle-check"></i>
           </div>
@@ -171,7 +197,7 @@ window.addEventListener('load', function () {
       } else {
         // Imprimir las tareas pendientes
         tareasPendientes.innerHTML += `
-        <li class="tarea">
+        <li class="tarea" data-aos="fade-right" data-aos-duration="2000">
           <button class="change" id="${tarea.id}"><i class="fa-regular fa-circle"></i></button>
           <div class="descripcion">
             <p class="nombre">${tarea.description}</p>
@@ -248,30 +274,40 @@ window.addEventListener('load', function () {
     // A cada boton le asignamos una funcionalidad
     btnEliminar.forEach(boton => {
       boton.addEventListener('click', ev => {
-        let confirmarEliminarTarea = confirm("¿Está seguro que desea eliminar la tarea?");
-  
-        if(confirmarEliminarTarea) {
-          console.log(ev.target.id);
-  
-          const id = ev.target.id;
-          const urlDelete = `${urlTareas}/${id}`;
-      
-          const settings =  {
-            method: "DELETE",
-            headers: { 
-              "authorization": token
-            }
-          };
-  
-          fetch(urlDelete, settings)
-            .then(response => response.json())
-            .then(data =>{
-                alert(data);
-               // Vuelvo a consultar las tareas actualizadas y pintarlas nuevamente en la pantalla
-               consultarTareas();
-            })
-            .catch(err => console.log(err));
-        }
+        Swal.fire({
+          title: "Eliminar tarea",
+          text: "¿Esta seguro que desea eliminar la tarea?",
+          icon: "question",
+          showCancelButton: true,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Si, confirmo!"
+        }).then((result) => {
+          if (result.isConfirmed) {
+            console.log(ev.target.id);
+            const id = ev.target.id;
+            const urlDelete = `${urlTareas}/${id}`;
+        
+            const settings =  {
+              method: "DELETE",
+              headers: { 
+                "authorization": token
+              }
+            };
+    
+            fetch(urlDelete, settings)
+              .then(response => response.json())
+              .then(data =>{
+                // Vuelvo a consultar las tareas actualizadas y pintarlas nuevamente en la pantalla
+                consultarTareas();
+                Swal.fire({
+                  title: data,
+                  icon: "success"
+                });
+              })
+              .catch(err => console.log(err));
+          }
+        });
       });
     });
   }
