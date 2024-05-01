@@ -1,4 +1,4 @@
-package ejemplo1;
+package ejemplotaza;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

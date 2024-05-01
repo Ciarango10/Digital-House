@@ -1,4 +1,4 @@
-package ejemplo2;
+package ejemplopersona;
 
 import org.junit.jupiter.api.Test;
 

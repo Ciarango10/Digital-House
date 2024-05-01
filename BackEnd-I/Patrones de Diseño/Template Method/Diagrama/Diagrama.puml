@@ -1,0 +1,39 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+abstract class Empleado{
+-nombre: String
+-apellido: String
+-nroCuenta: String
+}
+
+class EmpleadoEfectivo extends Empleado {
+-sueldoBasico: double
+-descuento: double
+-premios: double
+}
+
+class EmpleadoContratado extends Empleado {
+-cantHoras: int
+-tarifaHora: double
+}
+
+abstract class Liquidador {
++liquidarSueldo(Empleado): String
++{abstract}calcularMonto(Empleado): double
++{abstract}imprimir(Empleado): String
++depositar(Empleado): void
+}
+
+class LiquidadorEfectivo extends Liquidador{
++calcularMonto(Empleado): double
++imprimir(Empleado): String
+}
+
+class LiquidadorContratado extends Liquidador{
++calcularMonto(Empleado): double
++imprimir(Empleado): String
+}
+
+Empleado -l->Liquidador
+@enduml

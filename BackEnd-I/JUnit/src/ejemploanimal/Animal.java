@@ -1,4 +1,4 @@
-package ejemplo3;
+package ejemploanimal;
 
 public class Animal {
 

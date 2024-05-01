@@ -1,4 +1,4 @@
-package ejemplo3;
+package ejemploanimal;
 
 import org.junit.jupiter.api.Test;
 

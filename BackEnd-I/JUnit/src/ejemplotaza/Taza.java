@@ -1,4 +1,4 @@
-package ejemplo1;
+package ejemplotaza;
 
 public class Taza {
     private String tipoLiquido;

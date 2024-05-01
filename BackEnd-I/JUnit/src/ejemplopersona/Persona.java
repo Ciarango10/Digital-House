@@ -1,4 +1,4 @@
-package ejemplo2;
+package ejemplopersona;
 
 public class Persona {
     private String nombre;
