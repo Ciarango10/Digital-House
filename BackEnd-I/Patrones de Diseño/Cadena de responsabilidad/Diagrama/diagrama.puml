@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Mail {
+-origen: String
+-destino: String
+-tema: String
+}
+
+ManejadorMail .l.> Mail
+ManejadorMail --> ManejadorMail
+abstract class ManejadorMail {
++{abstract}comprobarMail(Mail): String
+}
+
+class ManejadorGerencia extends ManejadorMail {
++comprobarMail(Mail): String
+}
+
+class ManejadorComercial extends ManejadorMail {
++comprobarMail(Mail): String
+}
+
+class ManejadorTecnico extends ManejadorMail {
++comprobarMail(Mail): String
+}
+
+class ManejadorSpam extends ManejadorMail {
++comprobarMail(Mail): String
+}
+
+@enduml
