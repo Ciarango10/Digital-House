@@ -1,0 +1,16 @@
+@startuml
+
+class Computadora {
+-ram:int
+-discoDuro:int
+-tipo: String
+-{static} contador:int
+}
+
+ComputadoraFactory -l-> Computadora
+class ComputadoraFactory {
+-poolComputadoras:Hashmap
++obtenerComputadora(String tipoComputadora): Computadora
+}
+
+@enduml
