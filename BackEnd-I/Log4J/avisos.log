@@ -1,0 +1,132 @@
+[2024-05-08 15:04:02] [ INFO ] [TestLog:9] Empezamos nuestro metodo MAIN
+[2024-05-08 15:04:02] [ ERROR] [TestLog:14] Error por dividir por cero 
+java.lang.ArithmeticException: / by zero
+	at ejemplo.TestLog.main(TestLog.java:12)
+[2024-05-08 15:04:02] [ WARN ] [TestLog:16] Advertencia el metodo MAIN esta por finalizar
+[2024-05-08 15:04:02] [ DEBUG] [TestLog:17] Esto va a mostrarse solo si el infoLogger esta en DEBUG
+[2024-05-08 15:04:02] [ INFO ] [TestLog:18] Finalizamos el thread MAIN
+[2024-05-08 15:05:51] [ INFO ] [TestLog:9] Empezamos nuestro metodo MAIN
+[2024-05-08 15:05:51] [ ERROR] [TestLog:14] Error por dividir por cero 
+java.lang.ArithmeticException: / by zero
+	at ejemplo.TestLog.main(TestLog.java:12)
+[2024-05-08 15:05:51] [ WARN ] [TestLog:16] Advertencia el metodo MAIN esta por finalizar
+[2024-05-08 15:05:51] [ DEBUG] [TestLog:17] Esto va a mostrarse solo si el infoLogger esta en DEBUG
+[2024-05-08 15:05:51] [ INFO ] [TestLog:18] Finalizamos el thread MAIN
+[2024-05-08 21:51:38] [ INFO ] [Leon:20] El león Simba está corriendo
+[2024-05-08 21:51:38] [ INFO ] [Leon:20] El león Bom está corriendo
+[2024-05-08 21:51:38] [ INFO ] [Leon:20] El león Carlos está corriendo
+[2024-05-08 21:52:21] [ INFO ] [Leon:20] El león Simba está corriendo
+[2024-05-08 21:52:21] [ INFO ] [Leon:20] El león Bom está corriendo
+[2024-05-08 21:52:21] [ ERROR] [Leon:28] La edad no puede ser negativa
+[2024-05-08 21:52:57] [ INFO ] [Leon:20] El león Simba está corriendo
+[2024-05-08 21:52:57] [ INFO ] [Leon:20] El león Bom está corriendo
+[2024-05-08 21:52:57] [ ERROR] [Leon:28] La edad no puede ser negativa
+[2024-05-08 21:53:28] [ INFO ] [Leon:20] El león Simba está corriendo
+[2024-05-08 21:53:28] [ INFO ] [Leon:20] El león Bom está corriendo
+[2024-05-08 21:53:28] [ ERROR] [Leon:28] La edad no puede ser negativa
+[2024-05-08 21:53:49] [ INFO ] [Leon:20] El león Simba está corriendo
+[2024-05-08 21:53:49] [ INFO ] [Leon:20] El león Bom está corriendo
+[2024-05-08 21:53:49] [ ERROR] [Leon:28] La edad no puede ser negativa
+[2024-05-08 21:53:49] [ INFO ] [Tigre:18] El Tigre Freddie está corriendo
+[2024-05-08 21:57:44] [ INFO ] [Leon:20] El león Simba está corriendo
+[2024-05-08 21:57:44] [ INFO ] [Leon:20] El león Bom está corriendo
+[2024-05-08 21:57:44] [ ERROR] [Leon:28] La edad no puede ser negativa
+[2024-05-08 21:58:12] [ INFO ] [Leon:20] El león Simba está corriendo
+[2024-05-08 21:58:12] [ INFO ] [Leon:20] El león Bom está corriendo
+[2024-05-08 21:58:12] [ ERROR] [Leon:28] La edad no puede ser negativa
+[2024-05-08 21:58:12] [ INFO ] [Tigre:18] El Tigre Freddie está corriendo
+[2024-05-08 21:58:32] [ INFO ] [Leon:20] El león Simba está corriendo
+[2024-05-08 21:58:32] [ INFO ] [Leon:20] El león Bom está corriendo
+[2024-05-08 21:58:32] [ ERROR] [Leon:28] La edad no puede ser negativa
+[2024-05-08 21:58:32] [ INFO ] [Tigre:18] El Tigre Freddie está corriendo
+[2024-05-08 21:59:09] [ INFO ] [Leon:20] El león Simba está corriendo
+[2024-05-08 21:59:09] [ INFO ] [Leon:20] El león Bom está corriendo
+[2024-05-08 21:59:09] [ INFO ] [Leon:25] Es un leon alfa y tiene mas de 10 años
+[2024-05-08 21:59:09] [ ERROR] [Leon:28] La edad no puede ser negativa
+[2024-05-08 21:59:09] [ INFO ] [Tigre:18] El Tigre Freddie está corriendo
+[2024-05-09 19:54:47] [ INFO ] [ListaNumeros:16] La longitud de la lista es mayor a 5
+[2024-05-09 19:56:01] [ INFO ] [ListaNumeros:16] La longitud de la lista es mayor a 5
+[2024-05-09 19:56:14] [ ERROR] [ListaNumeros:36] La lista no puede tener cero elementos
+[2024-05-09 19:56:14] [ INFO ] [ListaNumeros:16] La longitud de la lista es mayor a 5
+[2024-05-09 19:56:21] [ INFO ] [ListaNumeros:16] La longitud de la lista es mayor a 5
+[2024-05-09 19:56:58] [ ERROR] [ListaNumeros:36] La lista no puede tener cero elementos
+[2024-05-09 19:56:58] [ INFO ] [ListaNumeros:38] El promedio es: 0.0
+[2024-05-09 19:56:58] [ INFO ] [ListaNumeros:16] La longitud de la lista es mayor a 5
+[2024-05-09 19:56:58] [ INFO ] [ListaNumeros:38] El promedio es: 14.5
+[2024-05-09 19:59:31] [ ERROR] [ListaNumeros:37] La lista no puede tener cero elementos
+[2024-05-09 19:59:31] [ INFO ] [ListaNumeros:39] El promedio es: 0.0
+[2024-05-09 19:59:31] [ DEBUG] [ListaNumeros:15] Numero agregado 4
+[2024-05-09 19:59:31] [ DEBUG] [ListaNumeros:15] Numero agregado 7
+[2024-05-09 19:59:31] [ DEBUG] [ListaNumeros:15] Numero agregado 8
+[2024-05-09 19:59:31] [ DEBUG] [ListaNumeros:15] Numero agregado 11
+[2024-05-09 19:59:31] [ DEBUG] [ListaNumeros:15] Numero agregado 25
+[2024-05-09 19:59:31] [ DEBUG] [ListaNumeros:15] Numero agregado 32
+[2024-05-09 19:59:31] [ INFO ] [ListaNumeros:17] La longitud de la lista es mayor a 5
+[2024-05-09 19:59:31] [ INFO ] [ListaNumeros:39] El promedio es: 14.5
+[2024-05-09 20:01:32] [ INFO ] [TestLog:9] Empezamos nuestro metodo MAIN
+[2024-05-09 20:01:32] [ ERROR] [TestLog:14] Error por dividir por cero 
+java.lang.ArithmeticException: / by zero
+	at ejemplo.TestLog.main(TestLog.java:12)
+[2024-05-09 20:01:32] [ WARN ] [TestLog:16] Advertencia el metodo MAIN esta por finalizar
+[2024-05-09 20:01:32] [ DEBUG] [TestLog:17] Esto va a mostrarse solo si el infoLogger esta en DEBUG
+[2024-05-09 20:01:32] [ INFO ] [TestLog:18] Finalizamos el thread MAIN
+[2024-05-09 20:11:06] [ ERROR] [ListaNumeros:32] La lista no puede tener cero elementos
+[2024-05-09 20:11:06] [ DEBUG] [ListaNumeros:15] Numero agregado 4
+[2024-05-09 20:11:06] [ DEBUG] [ListaNumeros:15] Numero agregado 7
+[2024-05-09 20:11:06] [ DEBUG] [ListaNumeros:15] Numero agregado 8
+[2024-05-09 20:11:06] [ DEBUG] [ListaNumeros:15] Numero agregado 11
+[2024-05-09 20:11:06] [ DEBUG] [ListaNumeros:15] Numero agregado 25
+[2024-05-09 20:11:06] [ DEBUG] [ListaNumeros:15] Numero agregado 32
+[2024-05-09 20:11:06] [ INFO ] [ListaNumeros:17] La longitud de la lista es mayor a 5
+[2024-05-09 20:11:06] [ INFO ] [ListaNumeros:41] El promedio es: 14.5
+[2024-05-09 20:12:25] [ INFO ] [Leon:20] El león Simba está corriendo
+[2024-05-09 20:12:25] [ INFO ] [Leon:20] El león Bom está corriendo
+[2024-05-09 20:12:25] [ INFO ] [Leon:25] Es un leon alfa y tiene mas de 10 años
+[2024-05-09 20:12:25] [ ERROR] [Leon:28] La edad no puede ser negativa
+[2024-05-09 20:12:25] [ INFO ] [Tigre:18] El Tigre Freddie está corriendo
+[2024-05-09 20:12:32] [ INFO ] [TestLog:9] Empezamos nuestro metodo MAIN
+[2024-05-09 20:12:32] [ ERROR] [TestLog:14] Error por dividir por cero 
+java.lang.ArithmeticException: / by zero
+	at ejemplo.TestLog.main(TestLog.java:12)
+[2024-05-09 20:12:32] [ WARN ] [TestLog:16] Advertencia el metodo MAIN esta por finalizar
+[2024-05-09 20:12:32] [ DEBUG] [TestLog:17] Esto va a mostrarse solo si el infoLogger esta en DEBUG
+[2024-05-09 20:12:32] [ INFO ] [TestLog:18] Finalizamos el thread MAIN
+[2024-05-09 20:13:51] [ ERROR] [ListaNumeros:32] La lista no puede tener cero elementos
+[2024-05-09 20:13:51] [ DEBUG] [ListaNumeros:15] Numero agregado 4
+[2024-05-09 20:13:51] [ DEBUG] [ListaNumeros:15] Numero agregado 7
+[2024-05-09 20:13:51] [ DEBUG] [ListaNumeros:15] Numero agregado 8
+[2024-05-09 20:13:51] [ DEBUG] [ListaNumeros:15] Numero agregado 11
+[2024-05-09 20:13:51] [ DEBUG] [ListaNumeros:15] Numero agregado 25
+[2024-05-09 20:13:51] [ DEBUG] [ListaNumeros:15] Numero agregado 32
+[2024-05-09 20:13:51] [ INFO ] [ListaNumeros:17] La longitud de la lista es mayor a 5
+[2024-05-09 20:13:51] [ INFO ] [ListaNumeros:41] El promedio es: 14.5
+[2024-05-09 20:14:11] [ INFO ] [ListaNumeros:36] El promedio es: NaN
+[2024-05-09 20:14:11] [ DEBUG] [ListaNumeros:15] Numero agregado 4
+[2024-05-09 20:14:11] [ DEBUG] [ListaNumeros:15] Numero agregado 7
+[2024-05-09 20:14:11] [ DEBUG] [ListaNumeros:15] Numero agregado 8
+[2024-05-09 20:14:11] [ DEBUG] [ListaNumeros:15] Numero agregado 11
+[2024-05-09 20:14:11] [ DEBUG] [ListaNumeros:15] Numero agregado 25
+[2024-05-09 20:14:11] [ DEBUG] [ListaNumeros:15] Numero agregado 32
+[2024-05-09 20:14:11] [ INFO ] [ListaNumeros:17] La longitud de la lista es mayor a 5
+[2024-05-09 20:14:11] [ INFO ] [ListaNumeros:36] El promedio es: 14.5
+[2024-05-09 20:14:58] [ ERROR] [ListaNumeros:32] La lista no puede tener cero elementos
+[2024-05-09 20:14:58] [ DEBUG] [ListaNumeros:15] Numero agregado 4
+[2024-05-09 20:14:58] [ DEBUG] [ListaNumeros:15] Numero agregado 7
+[2024-05-09 20:14:58] [ DEBUG] [ListaNumeros:15] Numero agregado 8
+[2024-05-09 20:14:58] [ DEBUG] [ListaNumeros:15] Numero agregado 11
+[2024-05-09 20:14:58] [ DEBUG] [ListaNumeros:15] Numero agregado 25
+[2024-05-09 20:14:58] [ DEBUG] [ListaNumeros:15] Numero agregado 32
+[2024-05-09 20:14:58] [ INFO ] [ListaNumeros:17] La longitud de la lista es mayor a 5
+[2024-05-09 20:14:58] [ INFO ] [ListaNumeros:41] El promedio es: 14.5
+[2024-05-09 22:13:06] [ INFO ] [TestLog:9] Empezamos nuestro metodo MAIN
+[2024-05-09 22:13:06] [ ERROR] [TestLog:14] Error por dividir por cero 
+java.lang.ArithmeticException: / by zero
+	at ejemplo.TestLog.main(TestLog.java:12)
+[2024-05-09 22:13:06] [ WARN ] [TestLog:16] Advertencia el metodo MAIN esta por finalizar
+[2024-05-09 22:13:06] [ DEBUG] [TestLog:17] Esto va a mostrarse solo si el infoLogger esta en DEBUG
+[2024-05-09 22:13:06] [ INFO ] [TestLog:18] Finalizamos el thread MAIN
+[2024-05-09 22:13:12] [ INFO ] [Leon:20] El león Simba está corriendo
+[2024-05-09 22:13:12] [ INFO ] [Leon:20] El león Bom está corriendo
+[2024-05-09 22:13:12] [ INFO ] [Leon:25] Es un leon alfa y tiene mas de 10 años
+[2024-05-09 22:13:12] [ ERROR] [Leon:28] La edad no puede ser negativa
+[2024-05-09 22:13:12] [ INFO ] [Tigre:18] El Tigre Freddie está corriendo

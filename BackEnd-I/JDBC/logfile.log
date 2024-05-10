@@ -1,0 +1,96 @@
+[2024-05-09 21:44:20] [ INFO ] [Main:45] Animal: 1 - PERRO - ODIN
+[2024-05-09 21:44:20] [ INFO ] [Main:45] Animal: 2 - GATO - ÑAÑA
+[2024-05-09 21:44:20] [ INFO ] [Main:45] Animal: 3 - PEZ - JULIA
+[2024-05-09 21:44:20] [ INFO ] [Main:45] Animal: 4 - PEZ - DORIS
+[2024-05-09 21:44:20] [ INFO ] [Main:45] Animal: 5 - SAPO - PEPE
+[2024-05-09 21:44:20] [ INFO ] [Main:53] -------------------------------------------------------
+[2024-05-09 21:44:20] [ INFO ] [Main:58] Animal: 1 - PERRO - ODIN
+[2024-05-09 21:44:20] [ INFO ] [Main:58] Animal: 2 - GATO - ÑAÑA
+[2024-05-09 21:44:20] [ INFO ] [Main:58] Animal: 3 - PEZ - JULIA
+[2024-05-09 21:44:20] [ INFO ] [Main:58] Animal: 4 - PEZ - DORIS
+[2024-05-09 21:44:34] [ INFO ] [Main:45] Animal: 1 - PERRO - ODIN
+[2024-05-09 21:44:34] [ INFO ] [Main:45] Animal: 2 - GATO - ÑAÑA
+[2024-05-09 21:44:34] [ INFO ] [Main:45] Animal: 3 - PEZ - JULIA
+[2024-05-09 21:44:34] [ INFO ] [Main:45] Animal: 4 - PEZ - DORIS
+[2024-05-09 21:44:34] [ INFO ] [Main:45] Animal: 5 - SAPO - PEPE
+[2024-05-09 21:44:34] [ INFO ] [Main:53] -------------------------------------------------------
+[2024-05-09 21:44:34] [ INFO ] [Main:58] Animal: 1 - PERRO - ODIN
+[2024-05-09 21:44:34] [ INFO ] [Main:58] Animal: 2 - GATO - ÑAÑA
+[2024-05-09 21:44:34] [ INFO ] [Main:58] Animal: 3 - PEZ - JULIA
+[2024-05-09 21:44:34] [ INFO ] [Main:58] Animal: 4 - PEZ - DORIS
+[2024-05-09 21:45:14] [ INFO ] [Main:44] Animal: 1 - PERRO - ODIN
+[2024-05-09 21:45:14] [ INFO ] [Main:44] Animal: 2 - GATO - ÑAÑA
+[2024-05-09 21:45:14] [ INFO ] [Main:44] Animal: 3 - PEZ - JULIA
+[2024-05-09 21:45:14] [ INFO ] [Main:44] Animal: 4 - PEZ - DORIS
+[2024-05-09 21:45:14] [ INFO ] [Main:44] Animal: 5 - SAPO - PEPE
+[2024-05-09 21:45:14] [ INFO ] [Main:52] -------------------------------------------------------
+[2024-05-09 21:45:14] [ INFO ] [Main:57] Animal: 1 - PERRO - ODIN
+[2024-05-09 21:45:14] [ INFO ] [Main:57] Animal: 2 - GATO - ÑAÑA
+[2024-05-09 21:45:14] [ INFO ] [Main:57] Animal: 3 - PEZ - JULIA
+[2024-05-09 21:45:14] [ INFO ] [Main:57] Animal: 4 - PEZ - DORIS
+[2024-05-09 22:04:03] [ ERROR] [Main:58] Error de Sintaxis en sentencia SQL "INSERT INTO FIGURA VALUES(DEFAULT, 'CIRCULO', 'ROJO),(DEFAULT, '[*]CIRCULO', 'ROJO),(DEFAULT, 'CIRCULO', 'VERDE),(DEFAULT, 'CUADRADO', 'BLANCO),(DEFAULT, 'CUADRADO', 'NEGRO),(DEFAULT, 'CUADRADO', 'AMARILLO);"; se esperaba "[, ., ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"
+Syntax error in SQL statement "INSERT INTO FIGURA VALUES(DEFAULT, 'CIRCULO', 'ROJO),(DEFAULT, '[*]CIRCULO', 'ROJO),(DEFAULT, 'CIRCULO', 'VERDE),(DEFAULT, 'CUADRADO', 'BLANCO),(DEFAULT, 'CUADRADO', 'NEGRO),(DEFAULT, 'CUADRADO', 'AMARILLO);"; expected "[, ., ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO FIGURA VALUES(DEFAULT, 'CIRCULO', 'ROJO),(DEFAULT, 'CIRCULO', 'ROJO),(DEFAULT, 'CIRCULO', 'VERDE),(DEFAULT, 'CUADRADO', 'BLANCO),(DEFAULT, 'CUADRADO', 'NEGRO),(DEFAULT, 'CUADRADO', 'AMARILLO); [42001-224]
+[2024-05-09 22:04:25] [ INFO ] [Main:42] Figura: 1 - CIRCULO - ROJO
+[2024-05-09 22:04:25] [ INFO ] [Main:42] Figura: 2 - CIRCULO - ROJO
+[2024-05-09 22:04:25] [ INFO ] [Main:52] Figura: 1 - CIRCULO - ROJO
+[2024-05-09 22:04:25] [ INFO ] [Main:52] Figura: 2 - CIRCULO - ROJO
+[2024-05-09 22:04:25] [ INFO ] [Main:52] Figura: 3 - CIRCULO - VERDE
+[2024-05-09 22:04:25] [ INFO ] [Main:52] Figura: 4 - CUADRADO - BLANCO
+[2024-05-09 22:04:25] [ INFO ] [Main:52] Figura: 5 - CUADRADO - NEGRO
+[2024-05-09 22:04:25] [ INFO ] [Main:52] Figura: 6 - CUADRADO - AMARILLO
+[2024-05-09 22:04:49] [ INFO ] [Main:42] Figura: 1 - CIRCULO - ROJO
+[2024-05-09 22:04:49] [ INFO ] [Main:42] Figura: 2 - CIRCULO - ROJO
+[2024-05-09 22:04:49] [ INFO ] [Main:47] -------------------------------------------------------
+[2024-05-09 22:04:49] [ INFO ] [Main:53] Figura: 1 - CIRCULO - ROJO
+[2024-05-09 22:04:49] [ INFO ] [Main:53] Figura: 2 - CIRCULO - ROJO
+[2024-05-09 22:04:49] [ INFO ] [Main:53] Figura: 3 - CIRCULO - VERDE
+[2024-05-09 22:04:49] [ INFO ] [Main:53] Figura: 4 - CUADRADO - BLANCO
+[2024-05-09 22:04:49] [ INFO ] [Main:53] Figura: 5 - CUADRADO - NEGRO
+[2024-05-09 22:04:49] [ INFO ] [Main:53] Figura: 6 - CUADRADO - AMARILLO
+[2024-05-09 22:05:56] [ ERROR] [Main:59] Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-224]
+[2024-05-09 22:06:24] [ ERROR] [Main:59] Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-224]
+[2024-05-09 22:06:37] [ ERROR] [Main:59] Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-224]
+[2024-05-09 22:06:51] [ ERROR] [Main:59] Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-224]
+[2024-05-09 22:06:58] [ INFO ] [Main:42] Figura: 1 - CIRCULO - ROJO
+[2024-05-09 22:06:58] [ INFO ] [Main:42] Figura: 2 - CIRCULO - ROJO
+[2024-05-09 22:06:58] [ INFO ] [Main:47] -------------------------------------------------------
+[2024-05-09 22:06:58] [ INFO ] [Main:53] Figura: 1 - CIRCULO - ROJO
+[2024-05-09 22:06:58] [ INFO ] [Main:53] Figura: 2 - CIRCULO - ROJO
+[2024-05-09 22:06:58] [ INFO ] [Main:53] Figura: 3 - CIRCULO - VERDE
+[2024-05-09 22:06:58] [ INFO ] [Main:53] Figura: 4 - CUADRADO - BLANCO
+[2024-05-09 22:06:58] [ INFO ] [Main:53] Figura: 5 - CUADRADO - NEGRO
+[2024-05-09 22:06:58] [ INFO ] [Main:53] Figura: 6 - CUADRADO - AMARILLO
+[2024-05-09 22:11:30] [ INFO ] [Main:44] Animal: 1 - PERRO - ODIN
+[2024-05-09 22:11:30] [ INFO ] [Main:44] Animal: 2 - GATO - ÑAÑA
+[2024-05-09 22:11:30] [ INFO ] [Main:44] Animal: 3 - PEZ - JULIA
+[2024-05-09 22:11:30] [ INFO ] [Main:44] Animal: 4 - PEZ - DORIS
+[2024-05-09 22:11:30] [ INFO ] [Main:44] Animal: 5 - SAPO - PEPE
+[2024-05-09 22:11:30] [ INFO ] [Main:52] -------------------------------------------------------
+[2024-05-09 22:11:30] [ INFO ] [Main:57] Animal: 1 - PERRO - ODIN
+[2024-05-09 22:11:30] [ INFO ] [Main:57] Animal: 2 - GATO - ÑAÑA
+[2024-05-09 22:11:30] [ INFO ] [Main:57] Animal: 3 - PEZ - JULIA
+[2024-05-09 22:11:30] [ INFO ] [Main:57] Animal: 4 - PEZ - DORIS
+[2024-05-09 22:11:36] [ INFO ] [Main:42] Figura: 1 - CIRCULO - ROJO
+[2024-05-09 22:11:36] [ INFO ] [Main:42] Figura: 2 - CIRCULO - ROJO
+[2024-05-09 22:11:36] [ INFO ] [Main:47] -------------------------------------------------------
+[2024-05-09 22:11:36] [ INFO ] [Main:53] Figura: 1 - CIRCULO - ROJO
+[2024-05-09 22:11:36] [ INFO ] [Main:53] Figura: 2 - CIRCULO - ROJO
+[2024-05-09 22:11:36] [ INFO ] [Main:53] Figura: 3 - CIRCULO - VERDE
+[2024-05-09 22:11:36] [ INFO ] [Main:53] Figura: 4 - CUADRADO - BLANCO
+[2024-05-09 22:11:36] [ INFO ] [Main:53] Figura: 5 - CUADRADO - NEGRO
+[2024-05-09 22:11:36] [ INFO ] [Main:53] Figura: 6 - CUADRADO - AMARILLO
+[2024-05-09 22:22:07] [ INFO ] [Main:44] Animal: 1 - PERRO - ODIN
+[2024-05-09 22:22:07] [ INFO ] [Main:44] Animal: 2 - GATO - ÑAÑA
+[2024-05-09 22:22:07] [ INFO ] [Main:44] Animal: 3 - PEZ - JULIA
+[2024-05-09 22:22:07] [ INFO ] [Main:44] Animal: 4 - PEZ - DORIS
+[2024-05-09 22:22:07] [ INFO ] [Main:44] Animal: 5 - SAPO - PEPE
+[2024-05-09 22:22:07] [ INFO ] [Main:52] -------------------------------------------------------
+[2024-05-09 22:22:07] [ INFO ] [Main:57] Animal: 1 - PERRO - ODIN
+[2024-05-09 22:22:07] [ INFO ] [Main:57] Animal: 2 - GATO - ÑAÑA
+[2024-05-09 22:22:07] [ INFO ] [Main:57] Animal: 3 - PEZ - JULIA
+[2024-05-09 22:22:07] [ INFO ] [Main:57] Animal: 4 - PEZ - DORIS
