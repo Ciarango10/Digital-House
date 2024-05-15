@@ -1,0 +1,16 @@
+[2024-05-14 23:07:44] [ INFO ] [MedicamentoDAOH2:104] El Medicamento encontrado es: Medicamento id=1, codigo=567, nombre='IBUPROFENO', laboratorio='PFIZER', cantidad=12, precio=3500.0
+[2024-05-14 23:07:44] [ INFO ] [MedicamentoDAOH2:49] Medicamento persistido: Medicamento id=3, codigo=1234, nombre='ASPIRINA', laboratorio='BAGO', cantidad=30, precio=10.0
+[2024-05-14 23:07:44] [ INFO ] [MedicamentoDAOH2:191] Medicamento devuelto: Medicamento id=1, codigo=567, nombre='IBUPROFENO', laboratorio='PFIZER', cantidad=12, precio=3500.0
+[2024-05-14 23:07:44] [ INFO ] [MedicamentoDAOH2:191] Medicamento devuelto: Medicamento id=2, codigo=859, nombre='PARACETAMOL', laboratorio='PFIZER', cantidad=10, precio=3000.0
+[2024-05-14 23:07:44] [ INFO ] [MedicamentoDAOH2:191] Medicamento devuelto: Medicamento id=3, codigo=1234, nombre='ASPIRINA', laboratorio='BAGO', cantidad=30, precio=10.0
+[2024-05-14 23:07:44] [ INFO ] [MedicamentoDAOH2:104] El Medicamento encontrado es: null
+[2024-05-14 23:08:05] [ INFO ] [MedicamentoDAOH2:104] El Medicamento encontrado es: Medicamento id=1, codigo=567, nombre='IBUPROFENO', laboratorio='PFIZER', cantidad=12, precio=3500.0
+[2024-05-14 23:08:05] [ INFO ] [MedicamentoDAOH2:49] Medicamento persistido: Medicamento id=3, codigo=1234, nombre='ASPIRINA', laboratorio='BAGO', cantidad=30, precio=10.0
+[2024-05-14 23:08:05] [ INFO ] [MedicamentoDAOH2:191] Medicamento devuelto: Medicamento id=1, codigo=567, nombre='IBUPROFENO', laboratorio='PFIZER', cantidad=12, precio=3500.0
+[2024-05-14 23:08:05] [ INFO ] [MedicamentoDAOH2:191] Medicamento devuelto: Medicamento id=2, codigo=859, nombre='PARACETAMOL', laboratorio='PFIZER', cantidad=10, precio=3000.0
+[2024-05-14 23:08:05] [ INFO ] [MedicamentoDAOH2:191] Medicamento devuelto: Medicamento id=3, codigo=1234, nombre='ASPIRINA', laboratorio='BAGO', cantidad=30, precio=10.0
+[2024-05-14 23:08:05] [ INFO ] [MedicamentoDAOH2:104] El Medicamento encontrado es: null
+[2024-05-14 23:08:09] [ INFO ] [MedicamentoDAOH2:191] Medicamento devuelto: Medicamento id=1, codigo=567, nombre='IBUPROFENO', laboratorio='PFIZER', cantidad=12, precio=3500.0
+[2024-05-14 23:08:09] [ INFO ] [MedicamentoDAOH2:191] Medicamento devuelto: Medicamento id=2, codigo=859, nombre='PARACETAMOL', laboratorio='PFIZER', cantidad=10, precio=3000.0
+[2024-05-14 23:08:16] [ INFO ] [MedicamentoDAOH2:191] Medicamento devuelto: Medicamento id=1, codigo=567, nombre='IBUPROFENO', laboratorio='PFIZER', cantidad=12, precio=3500.0
+[2024-05-14 23:08:16] [ INFO ] [MedicamentoDAOH2:191] Medicamento devuelto: Medicamento id=2, codigo=859, nombre='PARACETAMOL', laboratorio='PFIZER', cantidad=10, precio=3000.0

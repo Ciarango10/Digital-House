@@ -94,3 +94,21 @@ Wrong user name or password [28000-224]
 [2024-05-09 22:22:07] [ INFO ] [Main:57] Animal: 2 - GATO - ÑAÑA
 [2024-05-09 22:22:07] [ INFO ] [Main:57] Animal: 3 - PEZ - JULIA
 [2024-05-09 22:22:07] [ INFO ] [Main:57] Animal: 4 - PEZ - DORIS
+[2024-05-11 08:56:07] [ INFO ] [Main:42] Figura: 1 - CIRCULO - ROJO
+[2024-05-11 08:56:07] [ INFO ] [Main:42] Figura: 2 - CIRCULO - ROJO
+[2024-05-11 08:56:07] [ INFO ] [Main:47] -------------------------------------------------------
+[2024-05-11 08:56:07] [ INFO ] [Main:53] Figura: 1 - CIRCULO - ROJO
+[2024-05-11 08:56:07] [ INFO ] [Main:53] Figura: 2 - CIRCULO - ROJO
+[2024-05-11 08:56:07] [ INFO ] [Main:53] Figura: 3 - CIRCULO - VERDE
+[2024-05-11 08:56:07] [ INFO ] [Main:53] Figura: 4 - CUADRADO - BLANCO
+[2024-05-11 08:56:07] [ INFO ] [Main:53] Figura: 5 - CUADRADO - NEGRO
+[2024-05-11 08:56:07] [ INFO ] [Main:53] Figura: 6 - CUADRADO - AMARILLO
+[2024-05-11 08:59:30] [ INFO ] [Main:42] Figura: 1 - CIRCULO - ROJO
+[2024-05-11 08:59:30] [ INFO ] [Main:42] Figura: 2 - CIRCULO - ROJO
+[2024-05-11 08:59:30] [ INFO ] [Main:47] -------------------------------------------------------
+[2024-05-11 08:59:30] [ INFO ] [Main:53] Figura: 1 - CIRCULO - ROJO
+[2024-05-11 08:59:30] [ INFO ] [Main:53] Figura: 2 - CIRCULO - ROJO
+[2024-05-11 08:59:30] [ INFO ] [Main:53] Figura: 3 - CIRCULO - VERDE
+[2024-05-11 08:59:30] [ INFO ] [Main:53] Figura: 4 - CUADRADO - BLANCO
+[2024-05-11 08:59:30] [ INFO ] [Main:53] Figura: 5 - CUADRADO - NEGRO
+[2024-05-11 08:59:30] [ INFO ] [Main:53] Figura: 6 - CUADRADO - AMARILLO

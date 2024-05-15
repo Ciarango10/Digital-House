@@ -1,0 +1,29 @@
+[2024-05-14 20:36:46] [ INFO ] [Main:53] Datos de la cuenta: Cuenta{id=1, nroCuenta=1235, nombre='cuenta.mp', saldo=1000.0}
+[2024-05-14 20:36:46] [ INFO ] [Main:72] Datos de la cuenta: Cuenta{id=1, nroCuenta=1235, nombre='cuenta.mp', saldo=1010.0}
+[2024-05-14 20:36:46] [ ERROR] [Main:90] / by zero
+[2024-05-14 20:36:46] [ INFO ] [Main:103] Datos de la cuenta: Cuenta{id=1, nroCuenta=1235, nombre='cuenta.mp', saldo=1010.0}
+[2024-05-14 20:52:50] [ ERROR] [Main:56] Error de Sintaxis en sentencia SQL "DROP [*]IF EXISTS ODONTOLOGOS;CREATE TABLE ODONTOLOGO (ID INT AUTO_INCREMENT PRIMARY KEY, NOMBRE VARCHAR(50) NOT NULL, APELLIDO VARCHAR(50) NOT NULL, MATRICULA VARCHAR(50) NOT NULL);"; se esperaba "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, MATERIALIZED, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, AGGREGATE, SYNONYM"
+Syntax error in SQL statement "DROP [*]IF EXISTS ODONTOLOGOS;CREATE TABLE ODONTOLOGO (ID INT AUTO_INCREMENT PRIMARY KEY, NOMBRE VARCHAR(50) NOT NULL, APELLIDO VARCHAR(50) NOT NULL, MATRICULA VARCHAR(50) NOT NULL);"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, MATERIALIZED, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, AGGREGATE, SYNONYM"; SQL statement:
+DROP IF EXISTS ODONTOLOGOS;CREATE TABLE ODONTOLOGO (ID INT AUTO_INCREMENT PRIMARY KEY, NOMBRE VARCHAR(50) NOT NULL, APELLIDO VARCHAR(50) NOT NULL, MATRICULA VARCHAR(50) NOT NULL); [42001-224]
+[2024-05-14 20:53:10] [ ERROR] [Main:56] Error de Sintaxis en sentencia SQL "DROP [*]IF EXISTS ODONTOLOGOS;CREATE TABLE ODONTOLOGOS (ID INT AUTO_INCREMENT PRIMARY KEY, NOMBRE VARCHAR(50) NOT NULL, APELLIDO VARCHAR(50) NOT NULL, MATRICULA VARCHAR(50) NOT NULL);"; se esperaba "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, MATERIALIZED, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, AGGREGATE, SYNONYM"
+Syntax error in SQL statement "DROP [*]IF EXISTS ODONTOLOGOS;CREATE TABLE ODONTOLOGOS (ID INT AUTO_INCREMENT PRIMARY KEY, NOMBRE VARCHAR(50) NOT NULL, APELLIDO VARCHAR(50) NOT NULL, MATRICULA VARCHAR(50) NOT NULL);"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, MATERIALIZED, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, AGGREGATE, SYNONYM"; SQL statement:
+DROP IF EXISTS ODONTOLOGOS;CREATE TABLE ODONTOLOGOS (ID INT AUTO_INCREMENT PRIMARY KEY, NOMBRE VARCHAR(50) NOT NULL, APELLIDO VARCHAR(50) NOT NULL, MATRICULA VARCHAR(50) NOT NULL); [42001-224]
+[2024-05-14 20:53:21] [ INFO ] [Main:53] Datos del odontologo: Odontologoid=1, nombre='Carlos', apellido='Arango', matricula='FA1_0
+[2024-05-14 20:58:21] [ INFO ] [Main:52] Datos del odontologo: Odontologoid=1, nombre='Carlos', apellido='Arango', matricula='FA1_0
+[2024-05-14 20:58:21] [ ERROR] [Main:75] Parametro "#2" no está fijado
+Parameter "#2" is not set; SQL statement:
+UPDATE ODONTOLOGOS SET MATRICULA = ? WHERE ID = ? [90012-224]
+[2024-05-14 20:58:36] [ INFO ] [Main:52] Datos del odontologo: Odontologoid=1, nombre='Carlos', apellido='Arango', matricula='FA1_0
+[2024-05-14 20:58:36] [ INFO ] [Main:72] Datos del odontologo: Odontologoid=1, nombre='Carlos', apellido='Arango', matricula='CIA_1901
+[2024-05-14 21:00:40] [ INFO ] [Main:53] Datos de la cuenta: Cuenta{id=1, nroCuenta=1235, nombre='cuenta.mp', saldo=1000.0}
+[2024-05-14 21:00:40] [ INFO ] [Main:72] Datos de la cuenta: Cuenta{id=1, nroCuenta=1235, nombre='cuenta.mp', saldo=1010.0}
+[2024-05-14 21:00:40] [ ERROR] [Main:90] / by zero
+[2024-05-14 21:00:40] [ INFO ] [Main:103] Datos de la cuenta: Cuenta{id=1, nroCuenta=1235, nombre='cuenta.mp', saldo=1010.0}
+[2024-05-14 21:00:51] [ INFO ] [Main:53] Datos del odontologo: Odontologoid=1, nombre='Carlos', apellido='Arango', matricula='FA1_0
+[2024-05-14 21:00:51] [ INFO ] [Main:73] Datos del odontologo: Odontologoid=1, nombre='Carlos', apellido='Arango', matricula='CIA_1901
+[2024-05-14 21:08:15] [ INFO ] [Main:53] Datos del odontologo: Odontologoid=1, nombre='Carlos', apellido='Arango', matricula='FA1_0
+[2024-05-14 21:08:15] [ INFO ] [Main:73] Datos del odontologo: Odontologoid=1, nombre='Carlos', apellido='Arango', matricula='CIA_1901
+[2024-05-14 21:08:19] [ INFO ] [Main:53] Datos de la cuenta: Cuenta{id=1, nroCuenta=1235, nombre='cuenta.mp', saldo=1000.0}
+[2024-05-14 21:08:19] [ INFO ] [Main:72] Datos de la cuenta: Cuenta{id=1, nroCuenta=1235, nombre='cuenta.mp', saldo=1010.0}
+[2024-05-14 21:08:19] [ ERROR] [Main:90] / by zero
+[2024-05-14 21:08:19] [ INFO ] [Main:103] Datos de la cuenta: Cuenta{id=1, nroCuenta=1235, nombre='cuenta.mp', saldo=1010.0}
