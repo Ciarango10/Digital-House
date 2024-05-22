@@ -1,0 +1,23 @@
+[2024-05-21 19:59:52] [ INFO ] [OdontologoDAOEnMemoria:21] Odontologo guardado: dh.backend.model.Odontologo@4e91d63f
+[2024-05-21 19:59:52] [ INFO ] [OdontologoDAOEnMemoria:21] Odontologo guardado: dh.backend.model.Odontologo@78aab498
+[2024-05-21 19:59:52] [ INFO ] [OdontologoDAOEnMemoria:27] Listado de todos los odontólogos en memoria: [dh.backend.model.Odontologo@4e91d63f, dh.backend.model.Odontologo@78aab498]
+[2024-05-21 20:00:13] [ INFO ] [OdontologoDAOEnMemoria:21] Odontologo guardado: dh.backend.model.Odontologo@4e91d63f
+[2024-05-21 20:00:13] [ INFO ] [OdontologoDAOEnMemoria:21] Odontologo guardado: dh.backend.model.Odontologo@78aab498
+[2024-05-21 20:00:13] [ INFO ] [OdontologoDAOEnMemoria:27] Listado de todos los odontólogos en memoria: [dh.backend.model.Odontologo@4e91d63f, dh.backend.model.Odontologo@78aab498]
+[2024-05-21 20:00:39] [ INFO ] [OdontologoDAOEnMemoria:21] Odontologo guardado: Odontologoid=1, nroMatricula=12345, nombre='Juan', apellido='Perez'
+[2024-05-21 20:00:39] [ INFO ] [OdontologoDAOEnMemoria:21] Odontologo guardado: Odontologoid=2, nroMatricula=67890, nombre='Ana', apellido='Gomez'
+[2024-05-21 20:00:39] [ INFO ] [OdontologoDAOEnMemoria:27] Listado de todos los odontólogos en memoria: [Odontologoid=1, nroMatricula=12345, nombre='Juan', apellido='Perez', Odontologoid=2, nroMatricula=67890, nombre='Ana', apellido='Gomez']
+[2024-05-21 20:07:02] [ INFO ] [OdontologoDAOEnMemoria:21] Odontologo guardado: Odontologoid=1, nroMatricula=12345, nombre='Juan', apellido='Perez'
+[2024-05-21 20:07:02] [ INFO ] [OdontologoDAOEnMemoria:21] Odontologo guardado: Odontologoid=2, nroMatricula=67890, nombre='Ana', apellido='Gomez'
+[2024-05-21 20:07:02] [ INFO ] [OdontologoDAOEnMemoria:27] Listado de todos los odontólogos en memoria: [Odontologoid=1, nroMatricula=12345, nombre='Juan', apellido='Perez', Odontologoid=2, nroMatricula=67890, nombre='Ana', apellido='Gomez']
+[2024-05-21 20:11:04] [ INFO ] [OdontologoDAOH2:54] Valor Invalido "2" para el parametro "columnIndex"
+Invalid value "2" for parameter "columnIndex" [90008-224]
+[2024-05-21 20:11:04] [ INFO ] [OdontologoDAOH2:86] Odontólogo listado: Odontologoid=1, nroMatricula=1025, nombre='JANET', apellido='MARULANDA'
+[2024-05-21 20:11:04] [ INFO ] [OdontologoDAOH2:86] Odontólogo listado: Odontologoid=2, nroMatricula=1111, nombre='CARLOS', apellido='ARANGO'
+[2024-05-21 20:14:13] [ INFO ] [OdontologoDAOH2:38] Odontólogo guardado: Odontologoid=3, nroMatricula=1234, nombre='Juan', apellido='Herrera'
+[2024-05-21 20:14:13] [ INFO ] [OdontologoDAOH2:83] Odontólogo listado: Odontologoid=1, nroMatricula=1025, nombre='JANET', apellido='MARULANDA'
+[2024-05-21 20:14:13] [ INFO ] [OdontologoDAOH2:83] Odontólogo listado: Odontologoid=2, nroMatricula=1111, nombre='CARLOS', apellido='ARANGO'
+[2024-05-21 20:14:13] [ INFO ] [OdontologoDAOH2:83] Odontólogo listado: Odontologoid=3, nroMatricula=1234, nombre='Juan', apellido='Herrera'
+[2024-05-21 20:18:01] [ INFO ] [OdontologoDAOEnMemoria:21] Odontologo guardado: Odontologoid=1, nroMatricula=12345, nombre='Juan', apellido='Perez'
+[2024-05-21 20:18:01] [ INFO ] [OdontologoDAOEnMemoria:21] Odontologo guardado: Odontologoid=2, nroMatricula=67890, nombre='Ana', apellido='Gomez'
+[2024-05-21 20:18:01] [ INFO ] [OdontologoDAOEnMemoria:27] Listado de todos los odontólogos en memoria: [Odontologoid=1, nroMatricula=12345, nombre='Juan', apellido='Perez', Odontologoid=2, nroMatricula=67890, nombre='Ana', apellido='Gomez']
