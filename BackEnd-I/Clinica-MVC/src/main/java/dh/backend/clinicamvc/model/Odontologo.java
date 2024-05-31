@@ -6,6 +6,10 @@ public class Odontologo {
     private String nombre;
     private String apellido;
 
+    public Odontologo() {
+
+    }
+
     public Odontologo(Integer id, int nroMatricula, String nombre, String apellido) {
         this.id = id;
         this.nroMatricula = nroMatricula;
@@ -57,6 +61,6 @@ public class Odontologo {
                 "id=" + id +
                 ", nroMatricula=" + nroMatricula +
                 ", nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'';
+                ", apellido='" + apellido;
     }
 }

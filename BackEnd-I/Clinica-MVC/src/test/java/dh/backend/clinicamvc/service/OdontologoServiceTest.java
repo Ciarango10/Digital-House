@@ -1,6 +1,6 @@
 package dh.backend.clinicamvc.service;
 
-import dh.backend.clinicamvc.dao.impl.OdontologoDAOH2;
+import dh.backend.clinicamvc.dao.impl.OdontologoDaoH2;
 import dh.backend.clinicamvc.model.Odontologo;
 import dh.backend.clinicamvc.service.impl.OdontologoService;
 import org.junit.jupiter.api.Test;
@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class OdontologoServiceTest {
 
-    private static OdontologoService odontologoService = new OdontologoService(new OdontologoDAOH2());
+    private static OdontologoService odontologoService = new OdontologoService(new OdontologoDaoH2());
 
     @Test
     public void testGuardarYListarOdontologos()  {
