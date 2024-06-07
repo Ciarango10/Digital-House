@@ -1,17 +1,18 @@
 package dh.backend.clinicamvc.service;
 
-import dh.backend.clinicamvc.model.Turno;
+import dh.backend.clinicamvc.dto.request.TurnoRequestDto;
+import dh.backend.clinicamvc.dto.response.TurnoResponseDto;
 
 import java.util.List;
 
 public interface ITurnoService {
-    Turno registrarTurno(Turno turno);
+    TurnoResponseDto registrarTurno(TurnoRequestDto turnoRequestDto);
 
-    Turno buscarPorId(Integer id);
+    TurnoResponseDto buscarPorId(Integer id);
 
-    List<Turno> buscarTodos();
+    List<TurnoResponseDto> buscarTodos();
 
-    void actualizarTurno(Turno turno);
+    void actualizarTurno(Integer id, TurnoRequestDto turno);
 
     void eliminarTurno(Integer id);
 }

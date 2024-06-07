@@ -1,40 +1,47 @@
 package dh.backend.clinicamvc.service.impl;
 
-import dh.backend.clinicamvc.dao.IDao;
-import dh.backend.clinicamvc.model.Paciente;
+
+import dh.backend.clinicamvc.entity.Paciente;
+import dh.backend.clinicamvc.repository.IPacienteRepository;
 import dh.backend.clinicamvc.service.IPacienteService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class PacienteService implements IPacienteService {
 
-    private IDao<Paciente> pacienteIDao;
 
-    public PacienteService(IDao<Paciente> pacienteIDao) {
-        this.pacienteIDao = pacienteIDao;
+    private IPacienteRepository pacienteRepository;
+
+    public PacienteService(IPacienteRepository pacienteRepository) {
+        this.pacienteRepository = pacienteRepository;
     }
 
+    @Override
     public Paciente registrarPaciente(Paciente paciente) {
-        return pacienteIDao.registrar(paciente);
+        return pacienteRepository.save(paciente);
     }
 
-    public Paciente buscarPorId(Integer id) {
-        return pacienteIDao.buscarPorId(id);
+    @Override
+    public Optional<Paciente> buscarPorId(Integer id) {
+        return pacienteRepository.findById(id);
     }
 
+    @Override
     public List<Paciente> buscarTodos() {
-        return pacienteIDao.buscarTodos();
+        return pacienteRepository.findAll();
     }
 
     @Override
     public void actualizarPaciente(Paciente paciente) {
-        pacienteIDao.actualizar(paciente);
+        pacienteRepository.save(paciente);
     }
 
+    @Override
     public void eliminarPaciente(Integer id) {
-        pacienteIDao.eliminar(id);
+        pacienteRepository.deleteById(id);
     }
 
 }

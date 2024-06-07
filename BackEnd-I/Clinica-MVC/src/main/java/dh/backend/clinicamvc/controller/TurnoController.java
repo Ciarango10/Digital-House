@@ -1,6 +1,7 @@
 package dh.backend.clinicamvc.controller;
 
-import dh.backend.clinicamvc.model.Turno;
+import dh.backend.clinicamvc.dto.request.TurnoRequestDto;
+import dh.backend.clinicamvc.dto.response.TurnoResponseDto;
 import dh.backend.clinicamvc.service.ITurnoService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,13 +20,13 @@ public class TurnoController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Turno>> buscarTodos() {
+    public ResponseEntity<List<TurnoResponseDto>> buscarTodos() {
         return ResponseEntity.ok(turnoService.buscarTodos());
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Turno> buscarTurnoPorId(@PathVariable Integer id) {
-        Turno turno = turnoService.buscarPorId(id);
+    public ResponseEntity<TurnoResponseDto> buscarTurnoPorId(@PathVariable Integer id) {
+        TurnoResponseDto turno = turnoService.buscarPorId(id);
         if(turno != null) {
             return ResponseEntity.ok(turno);
         } else {
@@ -34,8 +35,8 @@ public class TurnoController {
     }
 
     @PostMapping
-    public ResponseEntity<Turno> registrarTurno(@RequestBody Turno turno) {
-        Turno turnoADevolver = turnoService.registrarTurno(turno);
+    public ResponseEntity<TurnoResponseDto> registrarTurno(@RequestBody TurnoRequestDto turno) {
+        TurnoResponseDto turnoADevolver = turnoService.registrarTurno(turno);
         if(turnoADevolver == null) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
         } else {
@@ -43,9 +44,9 @@ public class TurnoController {
         }
     }
 
-    @PutMapping
-    public ResponseEntity<String> actualizarTurno(@RequestBody Turno turno) {
-        turnoService.actualizarTurno(turno);
+    @PutMapping("/{id}")
+    public ResponseEntity<String> actualizarTurno(@PathVariable Integer id, @RequestBody TurnoRequestDto turno) {
+        turnoService.actualizarTurno(id, turno);
         return ResponseEntity.ok("Turno actualizado");
     }
 

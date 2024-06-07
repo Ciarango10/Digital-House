@@ -1,24 +1,37 @@
 package dh.backend.clinicamvc.service;
 
-import dh.backend.clinicamvc.dao.impl.PacienteDaoH2;
-import dh.backend.clinicamvc.model.Domicilio;
-import dh.backend.clinicamvc.model.Paciente;
+import dh.backend.clinicamvc.entity.Domicilio;
+import dh.backend.clinicamvc.entity.Paciente;
 import dh.backend.clinicamvc.service.impl.PacienteService;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@SpringBootTest
 class PacienteServiceTest {
-    private static PacienteService pacienteService = new PacienteService(new PacienteDaoH2());
+
+    @Autowired
+    private PacienteService pacienteService;
+    private Paciente paciente;
+
+    @BeforeEach
+    void setUp() {
+        paciente = new Paciente("Menganito", "Cosme", "46464646",
+                LocalDate.of(2024,01,12),
+                new Domicilio("Calle Falsa", 123, "San Pedro", "Jujuy"));
+    }
 
     @Test
     @DisplayName("Testear que un paciente fue guardado")
     void testPacienteGuardado(){
-        Paciente paciente = new Paciente("Carlos","Menganito","456464", LocalDate.of(2024,4,22),
-                new Domicilio("Calle Falsa", 456, "Springfield","Montana"));
         Paciente pacienteDesdeLaBD = pacienteService.registrarPaciente(paciente);
 
         assertNotNull(pacienteDesdeLaBD);
@@ -28,9 +41,10 @@ class PacienteServiceTest {
     @DisplayName("Testear busqueda paciente por id")
     void testPacientePorId(){
         Integer id = 1;
-        Paciente pacienteEncontrado = pacienteService.buscarPorId(id);
+        Optional<Paciente> pacienteEncontrado = pacienteService.buscarPorId(id);
+        Paciente paciente = pacienteEncontrado.get();
 
-        assertEquals(id, pacienteEncontrado.getId());
+        assertEquals(id, paciente.getId());
     }
 
     @Test

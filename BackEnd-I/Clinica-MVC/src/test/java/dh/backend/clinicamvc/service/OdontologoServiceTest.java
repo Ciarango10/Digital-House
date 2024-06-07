@@ -1,24 +1,56 @@
 package dh.backend.clinicamvc.service;
 
-import dh.backend.clinicamvc.dao.impl.OdontologoDaoH2;
-import dh.backend.clinicamvc.model.Odontologo;
+import dh.backend.clinicamvc.entity.Odontologo;
 import dh.backend.clinicamvc.service.impl.OdontologoService;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@SpringBootTest
 class OdontologoServiceTest {
 
-    private static OdontologoService odontologoService = new OdontologoService(new OdontologoDaoH2());
+    @Autowired
+    private OdontologoService odontologoService;
+    private Odontologo odontologo;
+
+    @BeforeEach
+    void setUp() {
+        odontologo = new Odontologo(1234, "Juan", "Herrera");
+    }
 
     @Test
-    public void testGuardarYListarOdontologos()  {
-        Odontologo odontologo = new Odontologo(1234, "Juan", "Herrera");
-        odontologoService.registrarOdontologo(odontologo);
+    @DisplayName("Testear que un odontólogo fue guardado")
+    void testOdontologoGuardado(){
+        Odontologo odontologoDesdeLaBD = odontologoService.registrarOdontologo(odontologo);
+
+        assertNotNull(odontologoDesdeLaBD);
+    }
+
+    @Test
+    @DisplayName("Testear busqueda odontólogo por id")
+    void testOdontologoPorId(){
+        Integer id = 1;
+        Optional<Odontologo> odontologoEncontrado = odontologoService.buscarPorId(id);
+        Odontologo odontologo1 = odontologoEncontrado.get();
+
+        assertEquals(id, odontologo1.getId());
+    }
+
+    @Test
+    @DisplayName("Testear busqueda todos los odontólogos")
+    void testBusquedaTodos() {
 
         List<Odontologo> odontologos = odontologoService.buscarTodos();
-        assertTrue(odontologos.size() > 0);
+
+        assertTrue(odontologos.size()!=0);
+
     }
 
 }

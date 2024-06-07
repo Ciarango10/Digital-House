@@ -1,14 +1,14 @@
 package dh.backend.clinicamvc.service;
 
-import dh.backend.clinicamvc.model.Odontologo;
-import dh.backend.clinicamvc.model.Paciente;
+import dh.backend.clinicamvc.entity.Odontologo;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface IOdontologoService {
     Odontologo registrarOdontologo(Odontologo odontologo);
 
-    Odontologo buscarPorId(Integer id);
+    Optional<Odontologo> buscarPorId(Integer id);
 
     List<Odontologo> buscarTodos();
 

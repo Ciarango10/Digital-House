@@ -9,7 +9,7 @@ public class ClinicaMvcApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ClinicaMvcApplication.class, args);
-		H2Connection.crearTablas();
+		//H2Connection.crearTablas();
 	}
 
 }
