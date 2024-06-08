@@ -3,7 +3,6 @@ package dh.backend.clinicamvc.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-
 @Getter
 @Setter
 @NoArgsConstructor
