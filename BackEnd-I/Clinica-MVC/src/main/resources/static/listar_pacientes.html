@@ -70,25 +70,27 @@
     </nav>
 
     <div class="container-xl">
-        <h1 class="mt-5">Odontologos</h1>
-        <table class="table table-striped-columns" id="odontologosTable">
+        <h1 class="mt-5">Pacientes</h1>
+        <table class="table table-striped-columns" id="pacientesTable">
           <thead>
             <tr>
               <th>Orden</th>
               <th>Nombre</th>
               <th>Apellido</th>
-              <th>Matricula</th>
+              <th>DNI</th>
+              <th>Fecha Ingreso</th>
+              <th>Domicilio</th>
             </tr>
           </thead>
           <tbody></tbody>
         </table>
     </div>
     
-    <div class="modal fade" id="editarOdontologo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editarOdontologoLabel" aria-hidden="true">
+    <div class="modal fade" id="editarPaciente" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editarPacienteLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="editarOdontologoLabel">Modificar Odontólogo</h1>
+              <h1 class="modal-title fs-5" id="editarPacienteLabel">Modificar Paciente</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -102,8 +104,28 @@
                       <input type="text" class="form-control" id="apellidoEdit" required />
                     </div>
                     <div class="mb-3">
-                      <label for="matriculaEdit" class="form-label">Matrícula</label>
-                      <input type="text" class="form-control" id="matriculaEdit" required />
+                      <label for="dniEdit" class="form-label">DNI</label>
+                      <input type="number" class="form-control" id="dniEdit" required />
+                    </div>
+                    <div class="mb-3">
+                      <label for="fechaIngresoEdit" class="form-label">Fecha de ingreso</label>
+                      <input type="date" class="form-control" id="fechaIngresoEdit" required />
+                    </div>
+                    <div class="mb-3">
+                      <label for="calleEdit" class="form-label">Calle</label>
+                      <input type="text" class="form-control" id="calleEdit" required />
+                    </div>
+                    <div class="mb-3">
+                      <label for="numeroEdit" class="form-label">Numero</label>
+                      <input type="number" class="form-control" id="numeroEdit" required />
+                    </div>
+                    <div class="mb-3">
+                      <label for="localidadEdit" class="form-label">Localidad</label>
+                      <input type="text" class="form-control" id="localidadEdit" required />
+                    </div>
+                    <div class="mb-3">
+                      <label for="provinciaEdit" class="form-label">Provincia</label>
+                      <input type="text" class="form-control" id="provinciaEdit" required />
                     </div>
                   </form>
             </div>
@@ -115,7 +137,7 @@
         </div>
     </div>
 
-    <script src="js/listar_odontologos.js"></script>
+    <script src="js/listar_pacientes.js"></script>
 
   </body>
 </html>

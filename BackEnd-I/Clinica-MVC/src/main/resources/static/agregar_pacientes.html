@@ -69,53 +69,47 @@
       </div>
     </nav>
 
-    <div class="container-xl">
-        <h1 class="mt-5">Odontologos</h1>
-        <table class="table table-striped-columns" id="odontologosTable">
-          <thead>
-            <tr>
-              <th>Orden</th>
-              <th>Nombre</th>
-              <th>Apellido</th>
-              <th>Matricula</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-    </div>
-    
-    <div class="modal fade" id="editarOdontologo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editarOdontologoLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="editarOdontologoLabel">Modificar Odontólogo</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form id="editarForm">
-                    <div class="mb-3">
-                      <label for="nombreEdit" class="form-label">Nombre</label>
-                      <input type="text" class="form-control" id="nombreEdit" required />
-                    </div>
-                    <div class="mb-3">
-                      <label for="apellidoEdit" class="form-label">Apellido</label>
-                      <input type="text" class="form-control" id="apellidoEdit" required />
-                    </div>
-                    <div class="mb-3">
-                      <label for="matriculaEdit" class="form-label">Matrícula</label>
-                      <input type="text" class="form-control" id="matriculaEdit" required />
-                    </div>
-                  </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-              <button type="submit" class="btn btn-primary" form="editarForm">Modificar</button>
-            </div>
+    <div class="container">
+        <h1 class="mt-5 mb-2">Agregar Pacientes</h1>
+        <form id="agregarForm">
+          <h3 class="text-center">Datos del paciente</h3>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required />
           </div>
-        </div>
+          <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellido" required />
+          </div>
+          <div class="mb-3">
+            <label for="dni" class="form-label">DNI</label>
+            <input type="number" class="form-control" id="dni" required />
+          </div>
+          <div class="mb-3">
+            <label for="fechaIngreso" class="form-label">Fecha de Ingreso</label>
+            <input type="date" class="form-control" id="fechaIngreso" required />
+          </div>
+          <h3 class="text-center">Datos del domicilio</h3>
+          <div class="mb-3">
+            <label for="calle" class="form-label">Calle</label>
+            <input type="text" class="form-control" id="calle" required />
+          </div>
+          <div class="mb-3">
+            <label for="numero" class="form-label">Numero</label>
+            <input type="number" class="form-control" id="numero" required />
+          </div>
+          <div class="mb-3">
+            <label for="localidad" class="form-label">Localidad</label>
+            <input type="text" class="form-control" id="localidad" required />
+          </div>
+          <div class="mb-3">
+            <label for="provincia" class="form-label">Provincia</label>
+            <input type="text" class="form-control" id="provincia" required />
+          </div>
+          <button type="submit" class="btn btn-primary">Agregar</button>
+        </form>
     </div>
-
-    <script src="js/listar_odontologos.js"></script>
+    <script src="js/agregar_pacientes.js"></script>
 
   </body>
 </html>

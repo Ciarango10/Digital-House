@@ -70,42 +70,44 @@
     </nav>
 
     <div class="container-xl">
-        <h1 class="mt-5">Odontologos</h1>
-        <table class="table table-striped-columns" id="odontologosTable">
+        <h1 class="mt-5">Turnos</h1>
+        <table class="table table-striped-columns" id="turnosTable">
           <thead>
             <tr>
               <th>Orden</th>
-              <th>Nombre</th>
-              <th>Apellido</th>
-              <th>Matricula</th>
+              <th>Odontólogo</th>
+              <th>Paciente</th>
+              <th>Fecha</th>
             </tr>
           </thead>
           <tbody></tbody>
         </table>
     </div>
     
-    <div class="modal fade" id="editarOdontologo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editarOdontologoLabel" aria-hidden="true">
+    <div class="modal fade" id="editarTurno" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editarTurnoLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="editarOdontologoLabel">Modificar Odontólogo</h1>
+              <h1 class="modal-title fs-5" id="editarTurnoLabel">Modificar Turno</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form id="editarForm">
                     <div class="mb-3">
-                      <label for="nombreEdit" class="form-label">Nombre</label>
-                      <input type="text" class="form-control" id="nombreEdit" required />
+                        <select id="cboOdontologoEdit" class="form-select" aria-label="Odontologo">
+                            <option selected value="0">Seleccione un Odontólogo</option>
+                        </select>
                     </div>
                     <div class="mb-3">
-                      <label for="apellidoEdit" class="form-label">Apellido</label>
-                      <input type="text" class="form-control" id="apellidoEdit" required />
+                        <select id="cboPacienteEdit" class="form-select" aria-label="Paciente">
+                            <option selected value="0">Seleccione un Paciente</option>
+                        </select>
                     </div>
                     <div class="mb-3">
-                      <label for="matriculaEdit" class="form-label">Matrícula</label>
-                      <input type="text" class="form-control" id="matriculaEdit" required />
-                    </div>
-                  </form>
+                        <label for="fechaEdit" class="form-label">Fecha</label>
+                        <input type="date" class="form-control" id="fechaEdit" required />
+                    </div>    
+                </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
@@ -115,7 +117,7 @@
         </div>
     </div>
 
-    <script src="js/listar_odontologos.js"></script>
+    <script src="js/listar_turnos.js"></script>
 
   </body>
 </html>
