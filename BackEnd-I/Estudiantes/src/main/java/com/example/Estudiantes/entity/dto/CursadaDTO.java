@@ -37,4 +37,5 @@ public class CursadaDTO {
     public void setMateria(Materia materia) {
         this.materia = materia;
     }
+
 }
