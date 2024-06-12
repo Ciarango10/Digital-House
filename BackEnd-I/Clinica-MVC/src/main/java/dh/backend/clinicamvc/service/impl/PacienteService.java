@@ -12,7 +12,6 @@ import java.util.Optional;
 @Service
 public class PacienteService implements IPacienteService {
 
-
     private IPacienteRepository pacienteRepository;
 
     public PacienteService(IPacienteRepository pacienteRepository) {
@@ -42,6 +41,16 @@ public class PacienteService implements IPacienteService {
     @Override
     public void eliminarPaciente(Integer id) {
         pacienteRepository.deleteById(id);
+    }
+
+    @Override
+    public Paciente buscarPacientePorDNI(String dni) {
+        return pacienteRepository.findByDNI(dni);
+    }
+
+    @Override
+    public List<Paciente> buscarPacientesPorProvincia(String provincia) {
+        return pacienteRepository.findByProvincia(provincia);
     }
 
 }

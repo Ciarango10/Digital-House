@@ -3,10 +3,13 @@ package dh.backend.clinicamvc.controller;
 import dh.backend.clinicamvc.dto.request.TurnoRequestDto;
 import dh.backend.clinicamvc.dto.response.TurnoResponseDto;
 import dh.backend.clinicamvc.service.ITurnoService;
+import org.springframework.cglib.core.Local;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @RestController
@@ -32,6 +35,20 @@ public class TurnoController {
         } else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
+    }
+
+    private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+    @GetMapping("/fechas")
+    public ResponseEntity<List<TurnoResponseDto>> buscarTurnosEntreFechas(@RequestParam String inicio, @RequestParam String fin) {
+        LocalDate fechaInicio = LocalDate.parse(inicio, formatter);
+        LocalDate fechaFin = LocalDate.parse(fin, formatter);
+
+        return ResponseEntity.ok(turnoService.listarTurnosEntreFechas(fechaInicio, fechaFin));
+    }
+
+    @GetMapping("/posteriorFechaActual")
+    public ResponseEntity<List<TurnoResponseDto>> buscarTurnosPosterioresFechaActual() {
+        return ResponseEntity.ok(turnoService.listarTurnosPosterioresFechaActual());
     }
 
     @PostMapping

@@ -37,6 +37,21 @@ public class OdontologoController {
         }
     }
 
+    @GetMapping("apellido/{apellido}")
+    public ResponseEntity<List<Odontologo>> buscarOdontologoPorApellido(@PathVariable String apellido) {
+        List<Odontologo> listaOdontologos = odontologoService.buscarOdontologoPorApellido(apellido);
+        if(listaOdontologos.size() > 0) {
+            return ResponseEntity.ok(listaOdontologos);
+        } else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
+    }
+
+    @GetMapping("nombre/{nombre}")
+    public ResponseEntity<List<Odontologo>> buscarOdontologoPornombre(@PathVariable String nombre) {
+        return ResponseEntity.ok(odontologoService.buscarOdontologoPorNombre(nombre));
+    }
+
     @PostMapping
     public ResponseEntity<Odontologo> registrarOdontologo(@RequestBody Odontologo odontologo) {
         return ResponseEntity.status(HttpStatus.CREATED).body(odontologoService.registrarOdontologo(odontologo));

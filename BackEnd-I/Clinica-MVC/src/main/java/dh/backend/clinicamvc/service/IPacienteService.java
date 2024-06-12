@@ -15,4 +15,8 @@ public interface IPacienteService {
     void actualizarPaciente(Paciente paciente);
 
     void eliminarPaciente(Integer id);
+
+    Paciente buscarPacientePorDNI(String dni);
+
+    List<Paciente> buscarPacientesPorProvincia(String provincia);
 }

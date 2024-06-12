@@ -115,6 +115,32 @@ public class TurnoService implements ITurnoService {
         turnoRepository.deleteById(id);
     }
 
+    @Override
+    public List<TurnoResponseDto> listarTurnosEntreFechas(LocalDate startDate, LocalDate endDate) {
+        List<Turno> listadoTurnos = turnoRepository.buscarTurnosEntreFechas(startDate, endDate);
+        List<TurnoResponseDto> listadoARetornar = new ArrayList<>();
+        TurnoResponseDto turnoAuxiliar = null;
+
+        for(Turno turno: listadoTurnos){
+            turnoAuxiliar = mapToResponseDto(turno);
+            listadoARetornar.add(turnoAuxiliar);
+        }
+        return listadoARetornar;
+    }
+
+    @Override
+    public List<TurnoResponseDto> listarTurnosPosterioresFechaActual() {
+        List<Turno> listadoTurnos = turnoRepository.buscarTurnosPosterioresFechaActual();
+        List<TurnoResponseDto> listadoARetornar = new ArrayList<>();
+        TurnoResponseDto turnoAuxiliar = null;
+
+        for(Turno turno: listadoTurnos){
+            turnoAuxiliar = mapToResponseDto(turno);
+            listadoARetornar.add(turnoAuxiliar);
+        }
+        return listadoARetornar;
+    }
+
     // Metodo que mapea Turno en TurnoResponseDto
     private TurnoResponseDto mapToResponseDto(Turno turno) {
         TurnoResponseDto turnoResponseDto = modelMapper.map(turno, TurnoResponseDto.class);

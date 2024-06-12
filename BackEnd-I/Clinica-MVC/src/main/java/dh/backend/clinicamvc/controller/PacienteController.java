@@ -35,6 +35,16 @@ public class PacienteController {
         }
     }
 
+    @GetMapping("/dni/{dni}")
+    public ResponseEntity<Paciente> buscarPacientePorDNI(@PathVariable String dni) {
+        return ResponseEntity.ok(pacienteService.buscarPacientePorDNI(dni));
+    }
+
+    @GetMapping("/provincia/{provincia}")
+    public ResponseEntity<List<Paciente>> buscarPacientesPorProvincia(@PathVariable String provincia) {
+        return ResponseEntity.ok(pacienteService.buscarPacientesPorProvincia(provincia));
+    }
+
     @PostMapping
     public ResponseEntity<Paciente> registrarPaciente(@RequestBody Paciente paciente) {
         return ResponseEntity.status(HttpStatus.CREATED).body(pacienteService.registrarPaciente(paciente));
