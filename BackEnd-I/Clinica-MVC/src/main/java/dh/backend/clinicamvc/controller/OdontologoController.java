@@ -1,13 +1,13 @@
 package dh.backend.clinicamvc.controller;
 
 import dh.backend.clinicamvc.entity.Odontologo;
+import dh.backend.clinicamvc.exception.BadRequestException;
+import dh.backend.clinicamvc.exception.ResourceNotFoundException;
 import dh.backend.clinicamvc.service.IOdontologoService;
-import org.aspectj.weaver.ast.Not;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.lang.annotation.Repeatable;
 import java.util.List;
 import java.util.Optional;
 
@@ -53,7 +53,7 @@ public class OdontologoController {
     }
 
     @PostMapping
-    public ResponseEntity<Odontologo> registrarOdontologo(@RequestBody Odontologo odontologo) {
+    public ResponseEntity<Odontologo> registrarOdontologo(@RequestBody Odontologo odontologo) throws BadRequestException {
         return ResponseEntity.status(HttpStatus.CREATED).body(odontologoService.registrarOdontologo(odontologo));
     }
 
@@ -69,14 +69,9 @@ public class OdontologoController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<String> eliminarPorId(@PathVariable Integer id) {
-        Optional<Odontologo> odontologo = odontologoService.buscarPorId(id);
-        if(odontologo.isPresent()) {
-            odontologoService.eliminarOdontologo(id);
-            return ResponseEntity.ok("{\"message\": \"Odontólogo eliminado\"}");
-        }else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
-        }
+    public ResponseEntity<String> eliminarPorId(@PathVariable Integer id) throws ResourceNotFoundException {
+        odontologoService.eliminarOdontologo(id);
+        return ResponseEntity.ok("{\"message\": \"Odontólogo eliminado\"}");
     }
 
 }

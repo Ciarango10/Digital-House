@@ -1,12 +1,14 @@
 package dh.backend.clinicamvc.service;
 
 import dh.backend.clinicamvc.entity.Odontologo;
+import dh.backend.clinicamvc.exception.BadRequestException;
+import dh.backend.clinicamvc.exception.ResourceNotFoundException;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface IOdontologoService {
-    Odontologo registrarOdontologo(Odontologo odontologo);
+    Odontologo registrarOdontologo(Odontologo odontologo) throws BadRequestException;
 
     Optional<Odontologo> buscarPorId(Integer id);
 
@@ -14,7 +16,7 @@ public interface IOdontologoService {
 
     void actualizarOdontologo(Odontologo odontologo);
 
-    void eliminarOdontologo(Integer id);
+    void eliminarOdontologo(Integer id) throws ResourceNotFoundException;
 
     List<Odontologo> buscarOdontologoPorApellido(String apellido);
 

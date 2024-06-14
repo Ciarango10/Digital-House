@@ -2,8 +2,9 @@ package dh.backend.clinicamvc.controller;
 
 import dh.backend.clinicamvc.dto.request.TurnoRequestDto;
 import dh.backend.clinicamvc.dto.response.TurnoResponseDto;
+import dh.backend.clinicamvc.exception.BadRequestException;
+import dh.backend.clinicamvc.exception.ResourceNotFoundException;
 import dh.backend.clinicamvc.service.ITurnoService;
-import org.springframework.cglib.core.Local;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -52,13 +53,9 @@ public class TurnoController {
     }
 
     @PostMapping
-    public ResponseEntity<TurnoResponseDto> registrarTurno(@RequestBody TurnoRequestDto turno) {
+    public ResponseEntity<TurnoResponseDto> registrarTurno(@RequestBody TurnoRequestDto turno) throws BadRequestException {
         TurnoResponseDto turnoADevolver = turnoService.registrarTurno(turno);
-        if(turnoADevolver == null) {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
-        } else {
-            return ResponseEntity.status(HttpStatus.CREATED).body(turnoADevolver);
-        }
+        return ResponseEntity.status(HttpStatus.CREATED).body(turnoADevolver);
     }
 
     @PutMapping("/{id}")
@@ -73,14 +70,9 @@ public class TurnoController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<String> eliminarPorId(@PathVariable Integer id) {
-        TurnoResponseDto turno = turnoService.buscarPorId(id);
-        if(turno != null) {
-            turnoService.eliminarTurno(id);
-            return ResponseEntity.ok("{\"message\": \"Turno eliminado\"}");
-        }else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
-        }
+    public ResponseEntity<String> eliminarPorId(@PathVariable Integer id) throws ResourceNotFoundException {
+        turnoService.eliminarTurno(id);
+        return ResponseEntity.ok("{\"message\": \"Turno eliminado\"}");
     }
 
 }

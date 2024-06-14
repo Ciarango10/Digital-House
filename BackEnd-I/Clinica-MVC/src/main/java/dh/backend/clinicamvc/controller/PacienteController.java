@@ -1,6 +1,8 @@
 package dh.backend.clinicamvc.controller;
 
 import dh.backend.clinicamvc.entity.Paciente;
+import dh.backend.clinicamvc.exception.BadRequestException;
+import dh.backend.clinicamvc.exception.ResourceNotFoundException;
 import dh.backend.clinicamvc.service.IPacienteService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -46,7 +48,7 @@ public class PacienteController {
     }
 
     @PostMapping
-    public ResponseEntity<Paciente> registrarPaciente(@RequestBody Paciente paciente) {
+    public ResponseEntity<Paciente> registrarPaciente(@RequestBody Paciente paciente) throws BadRequestException {
         return ResponseEntity.status(HttpStatus.CREATED).body(pacienteService.registrarPaciente(paciente));
     }
 
@@ -62,14 +64,9 @@ public class PacienteController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<String> eliminarPorId(@PathVariable Integer id) {
-        Optional<Paciente> pacienteOptional = pacienteService.buscarPorId(id);
-        if(pacienteOptional.isPresent()) {
-            pacienteService.eliminarPaciente(id);
-            return ResponseEntity.ok("{\"message\": \"Paciente eliminado\"}");
-        }else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
-        }
+    public ResponseEntity<String> eliminarPorId(@PathVariable Integer id) throws ResourceNotFoundException {
+        pacienteService.eliminarPaciente(id);
+        return ResponseEntity.ok("{\"message\": \"Paciente eliminado\"}");
     }
 
 }

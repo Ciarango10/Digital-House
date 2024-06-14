@@ -1,6 +1,7 @@
 package dh.backend.clinicamvc.service;
 
 import dh.backend.clinicamvc.entity.Odontologo;
+import dh.backend.clinicamvc.exception.BadRequestException;
 import dh.backend.clinicamvc.service.impl.OdontologoService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -27,7 +28,7 @@ class OdontologoServiceTest {
 
     @Test
     @DisplayName("Testear que un odontólogo fue guardado")
-    void testOdontologoGuardado(){
+    void testOdontologoGuardado() throws BadRequestException {
         Odontologo odontologoDesdeLaBD = odontologoService.registrarOdontologo(odontologo);
 
         assertNotNull(odontologoDesdeLaBD);

@@ -15,6 +15,6 @@ public interface IPacienteRepository extends JpaRepository<Paciente, Integer> {
     Paciente findByDNI(@Param("dni") String dni);
 
     //Listar pacientes cuyo domicilio se encuentre en una provincia particular
-    @Query("SELECT p FROM Paciente p JOIN p.domicilio d WHERE d.provincia = :provincia")
+    @Query("SELECT p FROM Paciente p JOIN p.domicilio d WHERE LOWER(d.provincia) = LOWER(:provincia)")
     List<Paciente> findByProvincia(@Param("provincia") String provincia);
 }
