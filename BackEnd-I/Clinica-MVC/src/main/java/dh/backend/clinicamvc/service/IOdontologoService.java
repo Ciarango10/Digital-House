@@ -1,8 +1,10 @@
 package dh.backend.clinicamvc.service;
 
+import dh.backend.clinicamvc.entity.Especialidad;
 import dh.backend.clinicamvc.entity.Odontologo;
 import dh.backend.clinicamvc.exception.BadRequestException;
 import dh.backend.clinicamvc.exception.ResourceNotFoundException;
+import jakarta.persistence.criteria.CriteriaBuilder;
 
 import java.util.List;
 import java.util.Optional;
@@ -21,4 +23,7 @@ public interface IOdontologoService {
     List<Odontologo> buscarOdontologoPorApellido(String apellido);
 
     List<Odontologo> buscarOdontologoPorNombre(String nombre);
+
+    //Agregar Especialidades
+    Odontologo agregarEspecialidad(Integer id_odontologo, Integer id_especialidad) throws ResourceNotFoundException;
 }

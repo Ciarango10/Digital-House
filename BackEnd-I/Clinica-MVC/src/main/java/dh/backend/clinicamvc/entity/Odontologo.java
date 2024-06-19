@@ -27,6 +27,14 @@ public class Odontologo {
     @JsonIgnore
     private Set<Turno> turnoSet = new HashSet<>();
 
+    @ManyToMany
+    @JoinTable(
+            name = "odontologos_especialidades",
+            joinColumns = @JoinColumn(name = "odontologo_id"),
+            inverseJoinColumns = @JoinColumn(name = "especialidad_id")
+    )
+    private Set<Especialidad> especialidades = new HashSet<>();
+
     public Odontologo(int nroMatricula, String nombre, String apellido) {
         this.nroMatricula = nroMatricula;
         this.nombre = nombre;

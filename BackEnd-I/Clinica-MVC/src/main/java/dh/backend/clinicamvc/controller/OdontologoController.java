@@ -68,6 +68,11 @@ public class OdontologoController {
         }
     }
 
+    @PutMapping("/{id_odontologo}/especialidad/{id_especialidad}")
+    public ResponseEntity<Odontologo> agregarEspecialidad(@PathVariable Integer id_odontologo, @PathVariable Integer id_especialidad) throws ResourceNotFoundException {
+        return ResponseEntity.ok(odontologoService.agregarEspecialidad(id_odontologo,id_especialidad));
+    }
+
     @DeleteMapping("/{id}")
     public ResponseEntity<String> eliminarPorId(@PathVariable Integer id) throws ResourceNotFoundException {
         odontologoService.eliminarOdontologo(id);

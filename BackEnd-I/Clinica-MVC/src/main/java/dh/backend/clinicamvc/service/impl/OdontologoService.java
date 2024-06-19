@@ -1,9 +1,11 @@
 package dh.backend.clinicamvc.service.impl;
 
+import dh.backend.clinicamvc.entity.Especialidad;
 import dh.backend.clinicamvc.entity.Odontologo;
 import dh.backend.clinicamvc.exception.BadRequestException;
 import dh.backend.clinicamvc.exception.ResourceNotFoundException;
 import dh.backend.clinicamvc.repository.IOdontologoRepository;
+import dh.backend.clinicamvc.service.IEspecialidadService;
 import dh.backend.clinicamvc.service.IOdontologoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,9 +19,12 @@ public class OdontologoService implements IOdontologoService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(OdontologoService.class);
     private IOdontologoRepository odontologoRepository;
+    //Otra forma de hacerlo
+    private IEspecialidadService especialidadService;
 
-    public OdontologoService(IOdontologoRepository odontologoRepository) {
+    public OdontologoService(IOdontologoRepository odontologoRepository, IEspecialidadService especialidadService) {
         this.odontologoRepository = odontologoRepository;
+        this.especialidadService = especialidadService;
     }
 
     @Override
@@ -60,12 +65,30 @@ public class OdontologoService implements IOdontologoService {
 
     @Override
     public List<Odontologo> buscarOdontologoPorApellido(String apellido) {
-        return  odontologoRepository.findByApellido(apellido);
+        return odontologoRepository.findByApellido(apellido);
     }
 
     @Override
     public List<Odontologo> buscarOdontologoPorNombre(String nombre) {
-        return  odontologoRepository.findByNombreLike(nombre);
+        return odontologoRepository.findByNombreLike(nombre);
+    }
+
+    @Override
+    public Odontologo agregarEspecialidad(Integer id_odontologo, Integer id_especialidad) throws ResourceNotFoundException {
+        Optional<Odontologo> odontologoOptional = odontologoRepository.findById(id_odontologo);
+        if(odontologoOptional.isEmpty()) {
+            throw new ResourceNotFoundException("{\"message\": \"Odontólogo no encontrado\"}");
+        }
+        Optional<Especialidad> especialidadOptional = especialidadService.buscarPorId(id_especialidad);
+        if(especialidadOptional.isEmpty()) {
+            throw new ResourceNotFoundException("{\"message\": \"Especialidad no encontrada\"}");
+        }
+
+        Odontologo odontologo = odontologoOptional.get();
+        odontologo.getEspecialidades().add(especialidadOptional.get());
+        actualizarOdontologo(odontologo);
+
+        return odontologo;
     }
 
 }
