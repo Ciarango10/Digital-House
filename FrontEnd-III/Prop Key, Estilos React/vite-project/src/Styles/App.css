@@ -1,0 +1,33 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+h1 {
+  color: purple;
+}
+h3,
+h4 {
+  margin: 10px;
+}
+button {
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  min-width: 10px;
+  min-height: 30px;
+  background-color: firebrick;
+  color: #fff;
+  cursor: pointer;
+}
+.list-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.navbar {
+  background-color: firebrick;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #fff;
+}
