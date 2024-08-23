@@ -1,0 +1,18 @@
+.card {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    width: 200px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+.card img {
+    width: 100px;
+    height: auto;
+}
+.card h2 {
+    font-size: 18px;
+    margin: 8px 0;
+}
