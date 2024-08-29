@@ -12,7 +12,7 @@ const Home = () => {
 
   useEffect(()=>{
     getBeers()
-  })
+  }, [])
 
   return (
     <div className='grid'>
