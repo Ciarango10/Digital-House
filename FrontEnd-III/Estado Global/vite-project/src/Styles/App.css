@@ -1,0 +1,62 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+h1 {
+  color: purple;
+}
+h3,
+h4 {
+  margin: 10px;
+}
+button {
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  min-width: 10px;
+  min-height: 30px;
+  background-color: firebrick;
+  color: #fff;
+  margin: 5px;
+  cursor: pointer;
+}
+.list-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.navbar {
+  background-color: firebrick;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #fff;
+}
+.parent {
+  padding: 20px;
+  height: 58vh;
+  background-color: #bbbbbb;
+}
+
+.child {
+  width: 90%;
+  height: 70%;
+  display: block;
+  margin: auto;
+  background-color: #8282f2;
+}
+
+.lobo-estepario {
+  background-color: beige;
+  color: black;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+  margin-right: 10px;
+}
+
+.lobo {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
